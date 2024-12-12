@@ -4,12 +4,9 @@
 
 :root {
   --background-btn: #002f69;
-  --text-links-color:#475467;
-
+  --text-links-color: #475467;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: "Urbanist";
 }
