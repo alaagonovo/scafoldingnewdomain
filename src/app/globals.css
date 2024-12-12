@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-btn: #002f69;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Urbanist";
+}
