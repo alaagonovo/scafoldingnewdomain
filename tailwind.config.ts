@@ -10,8 +10,7 @@ export default {
     extend: {
       colors: {
         btnbg: "var(--background-btn)",
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        linksColor: "var(--text-links-color)",
       },
     },
   },
