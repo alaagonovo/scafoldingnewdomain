@@ -22,7 +22,7 @@ function Header() {
             {links.map((link, index) => (
               <li key={index}>
                 <Link
-                  className="font-[600] text-[18px] text-linksColor"
+                  className="font-[600] text-[17px] text-linksColor"
                   href={link.path}
                 >
                   {link.name}
