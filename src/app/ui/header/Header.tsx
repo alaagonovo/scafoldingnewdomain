@@ -18,7 +18,7 @@ function Header() {
             </h2>
           </div>
           {/* links */}
-          <ul className="flex gap-8 max-w-[478px]">
+          <ul className="flex gap-[40px] max-w-[478px]">
             {links.map((link, index) => (
               <li key={index}>
                 <Link className="font-[600] text-linksColor" href={link.path}>
