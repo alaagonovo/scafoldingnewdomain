@@ -10,6 +10,7 @@ function HeroSection() {
       <div className="absolute inset-0 bg-black/20"></div>
       <h2
         data-aos="fade-up"
+        data-aos-delay="1000"
         className="text-white text-5xl font-[500] absolute top-[318px] left-[88px] leading-[66px]"
       >
         Explore Our Expertly Designed Scaffolding
@@ -17,6 +18,7 @@ function HeroSection() {
       </h2>
       <p
         data-aos="fade-up"
+        data-aos-delay="1500"
         className="text-white text-[22px]  absolute top-[482px] left-[88px] leading-[33px] max-w-[521px]"
       >
         Reliable, safe, and professional delivered exceptional scaffolding

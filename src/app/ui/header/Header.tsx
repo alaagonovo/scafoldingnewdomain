@@ -6,7 +6,11 @@ import React from "react";
 function Header() {
   return (
     <header className="w-[88%] left-1/2 transform -translate-x-1/2  absolute top-8 z-10">
-      <div data-aos="fade-up" className="bg-white py-4 px-8 rounded-[63px]">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="500"
+        className="bg-white py-4 px-8 rounded-[63px]"
+      >
         {/* logo */}
         <div className="flex items-center relative justify-between">
           <div className="flex gap-2">
