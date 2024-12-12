@@ -28,7 +28,7 @@ function HeroSection() {
         className="text-white text-[22px]   absolute top-[629px] left-[88px]   ring-1 ring-white rounded-[68px] px-12 py-3 hover:bg-btnbg hover:ring-0"
         href="/"
       >
-        Get A Quot
+        Get a Quote
       </Link>
     </section>
   );
