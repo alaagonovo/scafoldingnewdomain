@@ -26,6 +26,7 @@ function HeroSection() {
       </p>
       <Link
         data-aos="fade-up"
+        data-aos-delay="2000"
         style={{ transition: "all 300ms" }}
         className="text-white text-[22px]   absolute top-[629px] left-[88px]   ring-1 ring-white rounded-[68px] px-12 py-3 hover:bg-btnbg hover:ring-0"
         href="/"
