@@ -24,7 +24,8 @@ function HeroSection() {
       </p>
       <Link
         data-aos="fade-up"
-        className="text-white text-[22px]   absolute top-[629px] left-[88px] leading-[33px] max-w-[521px] ring-1 ring-white rounded-3xl px-8 py-1"
+        style={{ transition: "all 300ms" }}
+        className="text-white text-[22px]   absolute top-[629px] left-[88px]   ring-1 ring-white rounded-3xl px-12 py-3 hover:bg-btnbg hover:ring-0"
         href="/"
       >
         Get A Quot
