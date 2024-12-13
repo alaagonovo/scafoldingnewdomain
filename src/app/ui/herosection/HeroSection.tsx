@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <section
       className="relative h-[809px] bg-cover bg-top"
-      style={{ backgroundImage: `url(/assets/herocover.webp)` }}
+      style={{ backgroundImage: `url(/assets/herocover.webp)`}}
     >
       <div className="absolute inset-0 bg-black/20"></div>
       <h2

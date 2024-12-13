@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link href="/assets/herocover.webp" as="image" rel="preload" />
+      </head>
       <body className={urbanist.className}>
         <WithAOS>
           <Header />
