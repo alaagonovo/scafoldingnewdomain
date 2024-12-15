@@ -29,10 +29,12 @@ function ProCard({
           className="rounded-lg"
         />
       </div>
-      <h3 className="text-[22px] font-semibold text-white text-left w-full mb-2">
+      <h3 className="text-[22px] font-semibold text-white text-left w-full mb-2 ">
         {projectDetail.name}
       </h3>
-      <p className="text-white text-[18px] font-medium">{projectDetail.bio}</p>
+      <p className="text-white text-[18px] font-medium max-h-[54px] overflow-hidden">
+        {projectDetail.bio}
+      </p>
       <Link
         href="/"
         className="text-white w-full text-left underline decoration-1"
