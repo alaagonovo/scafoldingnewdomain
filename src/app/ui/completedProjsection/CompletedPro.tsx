@@ -33,10 +33,7 @@ function CompletedPro() {
             Contact Us
           </Link>
         </div>
-        <div
-          style={{ gridTemplateColumns: "repeat(3, 402px)" }}
-          className="grid mt-16 mx-auto gap-16"
-        >
+        <div className="grid mt-16 mx-auto grid-cols-3 gap-8">
           {projects.map((pro, index) => (
             <ProCard projectDetail={pro} key={index} index={index + 1} />
           ))}

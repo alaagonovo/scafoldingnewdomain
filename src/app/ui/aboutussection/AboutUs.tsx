@@ -34,7 +34,7 @@ function AboutUs() {
         <p
           className="text-[1.375rem] leading-[33px] w-[520px] font-medium my-6"
           data-aos="fade-up"
-          data-aos-delay="1200"
+          data-aos-delay="900"
         >
           Our experience with Estatein was outstanding. Their team&apos;s
           dedication and professionalism made finding our dream home a breeze.
