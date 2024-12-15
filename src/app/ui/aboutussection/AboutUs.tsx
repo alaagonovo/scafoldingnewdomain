@@ -47,7 +47,7 @@ function AboutUs() {
         >
           <Link
             style={{ transition: "all 300ms" }}
-            className="text-white bg-btnbg text-[18px]   rounded-[68px] px-14 py-[18px] hover:bg-btnbg "
+            className="text-white bg-btnbg text-[18px] rounded-[37px] px-14 py-[18px] hover:bg-btnbg btn_shadow"
             href="/"
           >
             Get a Quote
