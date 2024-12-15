@@ -21,7 +21,7 @@ function ProCard({
       data-aos-delay={`${300 * index}`}
       className="flex flex-col justify-center items-center p-10 border border-white rounded-xl "
     >
-      <div className="relative w-[322px] h-[318px] mb-6">
+      <div className="relative w-[100%] h-[318px] mb-6">
         <Image
           src={projectDetail.img}
           alt="project image"
