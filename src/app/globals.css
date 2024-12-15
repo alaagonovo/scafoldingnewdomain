@@ -10,3 +10,7 @@
 body {
   font-family: "Urbanist";
 }
+.main_wrapper {
+  width: 88%;
+  margin: auto;
+}

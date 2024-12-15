@@ -8,7 +8,7 @@ function Header() {
     <header className="w-[88%] left-1/2 transform -translate-x-1/2  absolute top-8 z-10">
       <div
         data-aos="fade-up"
-        data-aos-delay="500"
+        data-aos-delay="300"
         className="bg-white py-4 px-8 rounded-[63px]"
       >
         {/* logo */}

@@ -5,12 +5,12 @@ function HeroSection() {
   return (
     <section
       className="relative h-[809px] bg-cover bg-top"
-      style={{ backgroundImage: `url(/assets/herocover.webp)`}}
+      style={{ backgroundImage: `url(/assets/herocover.webp)` }}
     >
       <div className="absolute inset-0 bg-black/20"></div>
       <h2
         data-aos="fade-up"
-        data-aos-delay="1000"
+        data-aos-delay="600"
         className="text-white text-5xl font-[500] absolute top-[318px] left-[88px] leading-[66px]"
       >
         Explore Our Expertly Designed Scaffolding
@@ -18,21 +18,27 @@ function HeroSection() {
       </h2>
       <p
         data-aos="fade-up"
-        data-aos-delay="1500"
+        data-aos-delay="900"
         className="text-white text-[22px]  absolute top-[482px] left-[88px] leading-[33px] max-w-[521px]"
       >
         Reliable, safe, and professional delivered exceptional scaffolding
         solutions that perfectly supported our project needs.
       </p>
-      <Link
+      <div
         data-aos="fade-up"
-        data-aos-delay="2000"
-        style={{ transition: "all 300ms" }}
-        className="text-white text-[22px]   absolute top-[629px] left-[88px]   ring-1 ring-white rounded-[68px] px-12 py-3 hover:bg-btnbg hover:ring-0"
-        href="/"
+        data-aos-delay="1200"
+        className="inline-block absolute top-[629px] left-[88px]"
       >
-        Get a Quote
-      </Link>
+        <Link
+          data-aos="fade-up"
+          data-aos-delay="1500"
+          style={{ transition: "all 300ms" }}
+          className="text-white text-[22px]     ring-1 ring-white rounded-[68px] px-12 py-3 hover:bg-btnbg hover:ring-0"
+          href="/"
+        >
+          Get a Quote
+        </Link>
+      </div>
     </section>
   );
 }
