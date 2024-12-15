@@ -9,14 +9,14 @@ function AboutUs() {
         <h1
           className="text-5xl font-semibold mb-14"
           data-aos="fade-up"
-          data-aos-delay="300"
+          // data-aos-delay="300"
         >
           About Us
         </h1>
         <p
           className="text-[1.375rem] leading-[33px] w-[520px] font-medium my-6"
           data-aos="fade-up"
-          data-aos-delay="600"
+          // data-aos-delay="600"
         >
           Our experience with Estatein was outstanding. Their team&apos;s
           dedication and professionalism made finding our dream home a breeze.
@@ -25,7 +25,7 @@ function AboutUs() {
         <p
           className="text-[1.375rem] leading-[33px] w-[520px] font-medium my-6"
           data-aos="fade-up"
-          data-aos-delay="900"
+          // data-aos-delay="900"
         >
           Our experience with Estatein was outstanding. Their team&apos;s
           dedication and professionalism made finding our dream home a breeze.
@@ -34,7 +34,7 @@ function AboutUs() {
         <p
           className="text-[1.375rem] leading-[33px] w-[520px] font-medium my-6"
           data-aos="fade-up"
-          data-aos-delay="900"
+          // data-aos-delay="900"
         >
           Our experience with Estatein was outstanding. Their team&apos;s
           dedication and professionalism made finding our dream home a breeze.
@@ -42,7 +42,7 @@ function AboutUs() {
         </p>
         <div
           data-aos="fade-up"
-          data-aos-delay="1500"
+          // data-aos-delay="1500"
           className="inline-block  mt-16"
         >
           <Link
