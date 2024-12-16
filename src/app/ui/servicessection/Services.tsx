@@ -7,7 +7,7 @@ function Services() {
   return (
     <section className="overflow-hidden mb-12">
       <div className="main_wrapper">
-        <h1 data-aos="fade-up" className="text-[3rem] font-semibold mb-8">
+        <h1 data-aos="fade-up" className="text-[3rem] font-semibold mb-[14px]">
           Scaffolding Services
         </h1>
         <div className="flex justify-between">

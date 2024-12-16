@@ -12,6 +12,8 @@ export default {
         btnbg: "var(--background-btn)",
         linksColor: "var(--text-links-color)",
         lightBlue: "var(--light-blue-color)",
+        reviewactive: "var(--review-active-color)",
+        reviewTitle: "var( --review-title-color)",
       },
     },
   },

@@ -9,7 +9,7 @@ function CompletedPro() {
       <div className="main_wrapper">
         <h1
           data-aos="fade-up"
-          className="text-white text-[3rem] font-semibold mb-8"
+          className="text-white text-[3rem] font-semibold mb-[14px]"
         >
           Completed Projects
         </h1>

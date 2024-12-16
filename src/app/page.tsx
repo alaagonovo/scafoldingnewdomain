@@ -4,6 +4,7 @@ import CompletedPro from "./ui/completedProjsection/CompletedPro";
 import StatisticsSection from "./ui/statisticssection/StatisticsSection";
 import Services from "./ui/servicessection/Services";
 import Vision from "./ui/visionsection/Vision";
+import ReviewsSection from "./ui/reviewssection/ReviewsSection";
 // import Reda from "./ui/reda/Reda";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <StatisticsSection />
       <Services />
       <Vision />
+      <ReviewsSection />
       {/* <Reda /> */}
     </>
   );

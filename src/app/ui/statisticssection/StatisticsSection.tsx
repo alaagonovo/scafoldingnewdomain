@@ -25,18 +25,22 @@ function StatisticsSection() {
     };
   }, [isVisible]);
   const handleChangeStatistics = (index: number, value: number) => {
+    const intervalDelay = 100; // Interval delay in milliseconds
+    const steps = 2000 / intervalDelay; // Total number of intervals
+    const increment = Math.ceil(value / steps); // Increment step for this counter
     setInterval(() => {
       setStatisticsNum((prev) => {
         const newStats = [...prev];
-        if (newStats[index] < value) {
-          newStats[index] = newStats[index] + 1;
+        if (newStats[index] + increment < value) {
+          newStats[index] += increment;
         } else {
+          newStats[index] = value;
           clearInterval(intervalRefs.current[index]!);
           // Stop the interval once the value is reached
         }
         return newStats;
       });
-    }, 100); // Change the
+    }, intervalDelay); // Change the
   };
   return (
     <section className="grid grid-cols-3 my-12">
@@ -51,7 +55,12 @@ function StatisticsSection() {
           className="flex justify-center items-center h-[613px]"
         >
           <h1 className="text-[59px] font-bold w-[323px] text-center leading-[70px]">
-            {statisticsNum[index]}
+            <span
+              style={{ animationDuration: `1ms` }}
+              className="animate-slide"
+            >
+              {statisticsNum[index]}
+            </span>
             {item?.sign}
             <br />
             {item.text}

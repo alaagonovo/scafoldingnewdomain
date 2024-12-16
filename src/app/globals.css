@@ -6,6 +6,8 @@
   --background-btn: #002f69;
   --text-links-color: #475467;
   --light-blue-color: #0886f6;
+  --review-active-color: #e3f2fd;
+  --review-title-color: #263238;
 }
 
 body {
@@ -17,4 +19,18 @@ body {
 }
 .btn_shadow {
   box-shadow: 0px 1px 2px 0px #1018280d;
+}
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide {
+  animation: slideFromBottom 0.3s ease-out;
 }

@@ -4,7 +4,7 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <section className="main_wrapper grid grid-cols-2 py-20 overflow-x-hidden">
+    <section className="main_wrapper grid grid-cols-2 py-20 overflow-hidden">
       <div>
         <h1
           className="text-5xl font-semibold mb-14"

@@ -1,0 +1,66 @@
+.title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 88%;
+  margin: 3rem auto;
+}
+
+.card {
+  width: 252px;
+  height: 517px;
+  margin: 0 -3rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 35px;
+  transition: all 1s;
+}
+.card img {
+  object-fit: cover;
+  object-position: center;
+}
+/* .container h3 {
+  position: absolute;
+  top: 92%;
+  left: 20px;
+
+  font-size: 1.8rem;
+  font-weight: 900;
+  opacity: 0;
+} */
+
+.active {
+  width: 588px;
+  transition: width ease 1s;
+  background-color: var(--review-active-color);
+}
+
+/* .active h3 {
+  opacity: 1;
+  transition: opacity 3s;
+} */
+
+@media (max-width: 1024px) {
+  .container {
+    width: 96%;
+  }
+
+  .container h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  #CityonWinter,
+  #Mountains-Clouds {
+    display: none;
+  }
+
+  .container h3 {
+    top: 88%;
+  }
+}
