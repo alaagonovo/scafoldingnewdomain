@@ -3,7 +3,7 @@ const statistics = [
     num: 99,
     sign: "%",
     text: "Projects Completed",
-    bgColor: " #0886F6",
+    bgColor: "#0886F6",
     textColor: "#fff",
   },
   {

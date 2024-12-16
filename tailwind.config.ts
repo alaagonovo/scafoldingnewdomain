@@ -11,6 +11,7 @@ export default {
       colors: {
         btnbg: "var(--background-btn)",
         linksColor: "var(--text-links-color)",
+        lightBlue: "var(--light-blue-color)",
       },
     },
   },
