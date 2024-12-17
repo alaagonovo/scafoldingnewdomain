@@ -54,7 +54,7 @@ function ReviewCard({
         {activeCard !== review.id ? (
           <div>
             <div
-              className={`absolute top-10 ${index === 0 ? "left-8" : "left-32"}
+              className={`absolute top-6 ${index === 0 ? "left-8" : "left-32"}
                 
               }`}
             >
