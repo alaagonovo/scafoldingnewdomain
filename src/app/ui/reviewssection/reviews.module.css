@@ -47,7 +47,7 @@
   opacity: 0;
   animation-name: othersAnimation;
   animation-delay: 300ms;
-  animation-duration: 1s;
+  animation-duration: 700ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -55,7 +55,7 @@
   opacity: 0;
   animation-name: othersAnimation;
   animation-delay: 300ms;
-  animation-duration: 1s;
+  animation-duration: 700ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
