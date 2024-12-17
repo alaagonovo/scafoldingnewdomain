@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "../reviews.module.css";
+import Image from "next/image";
+import Reviewer from "../reviewer/Reviewer";
 
 interface IReviewProps {
   id: string;
   caption: string;
-  backgroundImage: string;
+  subtitle?: string;
+  review: string;
+  clientImage: string;
+  clientName: string;
+  clientPlace: string;
 }
 function ReviewCard({
   review,
@@ -23,44 +29,95 @@ function ReviewCard({
       id={review.id}
       style={index === 0 ? { zIndex: "4" } : { zIndex: `${4 - index}` }}
       className={`${styles.card} ${
-        activeCard === review.id ? styles.active : ""
+        activeCard === review.id
+          ? index === 0
+            ? styles.active
+            : styles.otheraActive
+          : ""
       }`}
     >
       <div
         className={`${
-          activeCard === review.id ? "bg-reviewactive" : "bg-slate-100"
-        } w-full h-full  border rounded-[35px] border-r-1 `}
+          activeCard === review.id
+            ? "bg-reviewactive"
+            : index === 1
+            ? activeCard === "3"
+              ? "bg-reviewsemidark"
+              : "bg-reviewsemilight"
+            : index === 2
+            ? activeCard === "3"
+              ? "bg-reviewsemilight"
+              : "bg-reviewsemidark"
+            : "bg-reviewdark"
+        } w-full h-full rounded-[45px]`}
       >
         {activeCard !== review.id ? (
           <div>
             <div
-              className={`absolute top-10 ${
-                index === 0 ? "left-8" : "left-32"
+              className={`absolute top-10 ${index === 0 ? "left-8" : "left-32"}
+                
               }`}
             >
               <p
-                className={`bg-white  
-            }  py-1   px-4 text-[12px] font-semibold text-reviewTitle rounded-md`}
+                className={`bg-white py-1 px-4 text-[12px] w-fit font-semibold text-reviewTitle rounded-md ${styles.otherAnimation}`}
               >
                 Label
               </p>
-              <h3 className="text-reviewTitle text-[24px] font-semibold mt-6">
-                {index + 1}
+              <h3
+                className={`text-reviewTitle text-[24px] font-semibold mt-6 ${styles.otherAnimation}`}
+              >
+                Section {index + 1}
               </h3>
             </div>
-            <button
-              className="z-20 bottom-3 left-24 absolute"
-              onClick={() => handleOpenCard(review.id)}
+            <div
+              className={`z-20 bottom-3 ${
+                index === 0 ? "left-8" : "left-32"
+              } absolute ${styles.otherAnimation}`}
             >
-              press
-            </button>
+              <button
+                className="relative"
+                onClick={() => handleOpenCard(review.id)}
+              >
+                <Image
+                  src="/svgs/btnreview.svg"
+                  alt="arrow button"
+                  width={56}
+                  height={56}
+                />
+              </button>
+            </div>
           </div>
         ) : (
-          <div className={`w-full ${index !== 0 ? "ml-24" : ""}`}>
-            <p className="bg-white py-1 px-4 text-[12px] font-semibold text-reviewTitle rounded-md w-fit mt-10 ml-10">
-              Label
-            </p>
-            <h1>Exceptional Service!</h1>
+          <div className={`max-w-full ${index !== 0 ? "ml-24" : ""}`}>
+            <div
+              className={`px-[32px] py-[26px] ${
+                index !== 0 ? styles.otherAnimation : styles.firstAnimation
+              }`}
+            >
+              <p className="bg-white py-1 px-4 text-[12px] font-semibold text-reviewTitle rounded-md w-fit">
+                Label
+              </p>
+
+              <Image
+                className="mt-7 mb-6"
+                src="/svgs/rate.svg"
+                alt=""
+                width={260}
+                height={44}
+              />
+
+              <h1 className="text-[33px] font-semibold text-btnbg mb-7">
+                {review.caption}
+              </h1>
+              <p className="text-[20px] leading-8 text-btnbg font-normal max-h-24 overflow-hidden">
+                {review.review}
+              </p>
+              <Reviewer
+                clientImage={review.clientImage}
+                clientName={review.clientName}
+                clientPlace={review.clientPlace}
+              />
+            </div>
           </div>
         )}
       </div>

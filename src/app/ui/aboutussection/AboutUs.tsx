@@ -55,7 +55,7 @@ function AboutUs() {
         </div>
       </div>
       <div
-        style={{ marginInlineStart: "calc(100% - 571px);" }}
+        style={{ marginInlineStart: "calc(100% - 571px)" }}
         className="relative h-[607px] max-w-[571px]"
       >
         <Image
