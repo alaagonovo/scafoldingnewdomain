@@ -11,6 +11,9 @@
   --review-semidark-color: #c1e1fc;
   --review-dark-color: #aed9fa;
   --review-title-color: #263238;
+  --footer-bg-color: #f4f4f4;
+  --footer-times-color: #565656;
+
 }
 
 body {

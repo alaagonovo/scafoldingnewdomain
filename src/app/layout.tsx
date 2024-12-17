@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
 import "aos/dist/aos.css";
-import Header from "./ui/header/Header";
+import Header from "./ui/common/header/Header";
 import WithAOS from "./ui/withAOS/WithAos";
+import Footer from "./ui/common/footer/Footer";
 
 const urbanist = Urbanist({
   subsets: ["latin"], // Add other subsets if needed
@@ -29,6 +30,7 @@ export default function RootLayout({
         <WithAOS>
           <Header />
           {children}
+          <Footer />
         </WithAOS>
       </body>
     </html>

@@ -7,7 +7,7 @@ import Image from "next/image";
 function Faqs() {
   return (
     <section
-      className="h-[870px] relative py-14"
+      className="h-[870px] relative py-14 mt-4"
       style={{ backgroundColor: "#002F69D9" }}
     >
       <Image
@@ -17,10 +17,17 @@ function Faqs() {
         className="z-[-1]"
       />
       <div className="main_wrapper">
-        <h1 className="text-5xl text-white font-semibold max-w-[768px]">
+        <h1
+          data-aos="fade-up"
+          className="text-5xl text-white font-semibold max-w-[768px]"
+        >
           FAQs
         </h1>
-        <p className="max-w-[768px] mt-5 text-white text-lg">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="max-w-[768px] mt-5 text-white text-lg"
+        >
           Everything you need to know about the product and billing. Can’t find
           the answer you’re looking for? Please
           <Link href="/" className="underline decoration-1 ml-2 mr-1">
@@ -34,7 +41,11 @@ function Faqs() {
           ))}
         </div>
         <div>
-          <div className="mt-16 p-8 bg-white rounded-2xl flex  justify-between">
+          <div
+            className="mt-16 p-8 bg-white rounded-2xl flex  justify-between"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div>
               <h1 className="text-xl leading-8 text-btnbg font-semibold">
                 Still have questions?

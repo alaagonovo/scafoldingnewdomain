@@ -15,7 +15,7 @@ const ReviewsSection = () => {
   };
 
   return (
-    <div className="overflow-hidden">
+    <section className="overflow-hidden">
       <div
         className="main_wrapper "
         style={{ marginTop: "3rem", marginBottom: "2rem" }}
@@ -43,7 +43,11 @@ const ReviewsSection = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.container}>
+      <div
+        data-aos="zoom-in-out"
+        data-aos-delay="600"
+        className={styles.container}
+      >
         {reviews.map((item, index) => (
           <ReviewCard
             review={item}
@@ -54,7 +58,7 @@ const ReviewsSection = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

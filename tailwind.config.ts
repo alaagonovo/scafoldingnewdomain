@@ -17,6 +17,8 @@ export default {
         reviewsemilight: "var(--review-semilight-color)",
         reviewsemidark: "var(--review-semidark-color)",
         reviewdark: "var(--review-dark-color)",
+        footerbg: "var(--footer-bg-color)",
+        time: "var(--footer-times-color)",
       },
     },
   },
