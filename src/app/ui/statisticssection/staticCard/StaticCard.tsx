@@ -1,4 +1,6 @@
-import React, { RefObject } from "react";
+"use client";
+import { useIntersectionObserver } from "@/app/lib/useIntersectionObserver";
+import React, { useEffect } from "react";
 interface IStatics {
   num: number;
   sign?: string;
@@ -8,15 +10,20 @@ interface IStatics {
 }
 function StaticCard({
   index,
-  elementRef,
+  setIsVisible,
   item,
   statisticsNum,
 }: {
   index: number;
-  elementRef: RefObject<HTMLDivElement | null>;
+
   item: IStatics;
   statisticsNum: number[];
+  setIsVisible: (value: boolean) => void;
 }) {
+  const { isVisible, elementRef } = useIntersectionObserver("0");
+  useEffect(() => {
+    setIsVisible(isVisible);
+  }, [isVisible, setIsVisible]);
   return (
     <div
       key={index}

@@ -1,11 +1,11 @@
 "use client";
 import statistics from "@/app/data/statistics";
-import { useIntersectionObserver } from "@/app/lib/useIntersectionObserver";
+
 import React, { useEffect, useRef, useState } from "react";
 import StaticCard from "./staticCard/StaticCard";
 
 function StatisticsSection() {
-  const { isVisible, elementRef } = useIntersectionObserver("0");
+  const [isVisible, setIsVisible] = useState(false);
   const [statisticsNum, setStatisticsNum] = useState<number[]>(
     new Array(statistics.length).fill(0)
   );
@@ -50,7 +50,7 @@ function StatisticsSection() {
         <StaticCard
           index={index}
           statisticsNum={statisticsNum}
-          elementRef={elementRef}
+          setIsVisible={setIsVisible}
           item={item}
           key={index}
         />
