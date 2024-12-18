@@ -7,7 +7,7 @@ import Image from "next/image";
 function Faqs() {
   return (
     <section
-      className="h-[870px] relative py-14 mt-4"
+      className="h-auto lg:h-[870px] relative py-14 mt-4"
       style={{ backgroundColor: "#002F69D9" }}
     >
       <Image
@@ -16,7 +16,7 @@ function Faqs() {
         fill
         className="z-[-1]"
       />
-      <div className="main_wrapper">
+      <div className="mx-auto w-[92%] md:w-[88%]">
         <h1
           data-aos="fade-up"
           className="text-5xl text-white font-semibold max-w-[768px]"
@@ -26,7 +26,7 @@ function Faqs() {
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="max-w-[768px] mt-5 text-white text-lg"
+          className="max-w-full lg:max-w-[768px] mt-5 text-white text-lg"
         >
           Everything you need to know about the product and billing. Can’t find
           the answer you’re looking for? Please
@@ -35,14 +35,14 @@ function Faqs() {
           </Link>
           .
         </p>
-        <div className="grid grid-cols-3 mt-16 gap-x-4 gap-y-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 lg:mt-16 gap-x-4 gap-y-10 lg:gap-y-16">
           {faqs.map((faq, index) => (
             <FaqsCard question={faq.question} answer={faq.answer} key={index} />
           ))}
         </div>
         <div>
           <div
-            className="mt-16 p-8 bg-white rounded-2xl flex  justify-between"
+            className="mt-16 p-8 bg-white rounded-2xl flex  justify-between flex-col lg:flex-row w-fit lg:w-full"
             data-aos="fade-up"
             data-aos-delay="400"
           >
@@ -57,7 +57,7 @@ function Faqs() {
             </div>
             <Link
               href="/"
-              className="bg-btnbg px-7 py-[10px] text-base h-fit text-white rounded-3xl"
+              className="bg-btnbg px-7 py-[10px] text-base h-fit text-white rounded-3xl w-fit mt-5 lg:mt-0"
             >
               Get in touch
             </Link>

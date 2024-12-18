@@ -1,0 +1,40 @@
+@media (max-width: 1266px) {
+  .grid_Responsive {
+    grid-template-columns: 1fr;
+  }
+  .image_responsive {
+    display: block;
+    height: 500px;
+  }
+  .image_responsive img {
+    object-position: center;
+  }
+  .large_image {
+    display: none;
+  }
+  .paragraph {
+    width: 100%;
+  }
+}
+@media (max-width: 997px) {
+  .grid_Responsive {
+    width: 100%;
+  }
+  .image_responsive {
+    height: 400px;
+  }
+  .paragraph {
+    width: 96%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+  .btn_link {
+    display: block;
+    margin-inline-start: 2%;
+  }
+}
+@media (max-width: 440px) {
+  .image_responsive {
+    height: 320px;
+  }
+}

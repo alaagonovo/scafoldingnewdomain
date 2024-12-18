@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+  .dis_none {
+    display: none;
+  }
+  .smooth_open {
+    animation-name: asideAnimation;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .smooth_close {
+    animation-name: asideAnimation;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+  }
+}
+@keyframes asideAnimation {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 210.7px;
+  }
+}

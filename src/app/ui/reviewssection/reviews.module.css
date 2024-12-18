@@ -23,15 +23,6 @@
   object-fit: cover;
   object-position: center;
 }
-/* .container h3 {
-  position: absolute;
-  top: 92%;
-  left: 20px;
-
-  font-size: 1.8rem;
-  font-weight: 900;
-  opacity: 0;
-} */
 
 .active {
   width: 580px;
@@ -59,6 +50,72 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    height: 88px;
+    margin: -40px 0 0 0;
+    border-radius: 24px;
+  }
+  .active {
+    height: 380px;
+    transition: height ease 500ms;
+  }
+  .otheraActive {
+    height: 400px;
+    transition: height ease 500ms;
+  }
+  .firstAnimation {
+    animation-name: responsiveAnimation;
+  }
+  .otherAnimation {
+    animation-name: responsiveAnimation;
+  }
+  .responsive {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 90%;
+  }
+  .responsive_One {
+    height: 100%;
+    align-items: center;
+  }
+  .responsive_One button {
+    top: 4px !important;
+  }
+
+  .responsive > div {
+    position: relative;
+  }
+  .responsive > div button {
+    transform: scale(0.5) rotate(90deg);
+    top: 17px;
+  }
+  .first_responsive {
+    height: 56px;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+    width: 92%;
+  }
+}
+@keyframes responsiveAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes othersAnimation {
   0% {
     opacity: 0;
@@ -69,28 +126,3 @@
     transform: translateX(0);
   }
 }
-/* .active h3 {
-  opacity: 1;
-  transition: opacity 3s;
-} */
-
-/* @media (max-width: 1024px) {
-  .container {
-    width: 96%;
-  }
-
-  .container h3 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 520px) {
-  #CityonWinter,
-  #Mountains-Clouds {
-    display: none;
-  }
-
-  .container h3 {
-    top: 88%;
-  }
-} */

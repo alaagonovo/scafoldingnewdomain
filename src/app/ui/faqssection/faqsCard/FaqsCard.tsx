@@ -5,7 +5,7 @@ interface IFaqs {
 }
 function FaqsCard({ question, answer }: IFaqs) {
   return (
-    <div className="flex flex-col max-w-[384px]">
+    <div className="flex flex-col max-w-full lg:max-w-[384px]">
       <h1
         data-aos="fade-up"
         data-aos-delay="400"

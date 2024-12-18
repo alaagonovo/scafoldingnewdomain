@@ -4,25 +4,32 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="footerbg p-[75px]">
-      <div className="grid grid-cols-2 gap-10">
+    <footer className="footerbg w-[92%] mx-auto xl:w-[100%]  py-[35px]  xl:p-[75px]">
+      <h1
+        data-aos="fade-up"
+        data-aos-delay="200"
+        className="text-black text-[35px] sm:text-[67px] font-semibold my-[40px] lg:hidden"
+      >
+        Contact Info
+      </h1>
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-0 gap-10">
         <div
-          className="h-[790px] w-[580] relative"
+          className="h-[331px] sm:h-[400px] lg:h-[790px] w-[580] relative"
           data-aos="fade-right"
           data-aos-delay="200"
         >
           <Image src="/assets/footerview.webp" alt="" fill />
         </div>
-        <div className="ml-20">
+        <div className="xl:ml-20 ml-0 sm:ml-10">
           <h1
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-black text-[67px] font-semibold mb-[90px]"
+            className="text-black text-[67px] font-semibold mb-[90px] hidden lg:block"
           >
             Contact Info
           </h1>
           <p
-            className="text-3xl leading-10 font-medium mb-14"
+            className="text-2xl md:text-3xl leading-10 font-medium mb-7 xl:mb-14"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -30,7 +37,7 @@ function Footer() {
             BRENTFORD, TW8 9DW
           </p>
           <p
-            className="text-3xl leading-10 font-medium mb-20"
+            className="text-2xl md:text-3xl leading-10 font-medium mb-10 xl:mb-20"
             data-aos="fade-up"
             data-aos-delay="400"
           >
@@ -38,10 +45,10 @@ function Footer() {
             <br />
             info@thescaffolding.co.uk
           </p>
-          <div className="grid grid-cols-2 gap-14">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 xl:gap-14">
             <div>
               <h2
-                className="text-3xl leading-10 font-medium mb-5"
+                className="text-2xl md:text-3xl leading-10 font-medium mb-5"
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
@@ -69,16 +76,17 @@ function Footer() {
                 className="text-2xl text-time"
                 data-aos="fade-up"
                 data-aos-delay="800"
+                data-aos-offset="50"
               >
                 Sunday
                 <br />
                 appointment only
               </p>
             </div>
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between gap-8 sm:gap-0">
               <div>
                 <h2
-                  className="text-3xl leading-10 font-medium mb-5"
+                  className="text-2xl md:text-3xl leading-10 font-medium mb-5"
                   data-aos="fade-up"
                   data-aos-delay="500"
                 >
@@ -134,6 +142,7 @@ function Footer() {
                 className="relative w-[220px] h-[36px]"
                 data-aos="fade-up"
                 data-aos-delay="700"
+                data-aos-offset="50"
               >
                 <Image src="/svgs/logofoot.svg" alt="logo" fill />
               </div>

@@ -4,14 +4,14 @@ import React from "react";
 function HeroSection() {
   return (
     <section
-      className="relative h-[809px] bg-cover bg-top"
+      className="relative h-[909px] lg:h-[809px] bg-cover bg-top overflow-hidden"
       style={{ backgroundImage: `url(/assets/herocover.webp)` }}
     >
       <div className="absolute inset-0 bg-black/20"></div>
       <h2
         data-aos="fade-up"
         data-aos-delay="600"
-        className="text-white text-5xl font-[500] absolute top-[318px] left-[88px] leading-[66px]"
+        className="text-white text-5xl sm:max-w-[500px] md:max-w-max  font-[500] lg:absolute top-28 md:top-[318px] lg:left-[88px] w-[94%] relative mx-auto   leading-[66px]"
       >
         Explore Our Expertly Designed Scaffolding
         <br /> Solutions. Built for Strength and Safety
@@ -19,7 +19,7 @@ function HeroSection() {
       <p
         data-aos="fade-up"
         data-aos-delay="900"
-        className="text-white text-[22px]  absolute top-[482px] left-[88px] leading-[33px] max-w-[521px]"
+        className="text-white text-[22px]  lg:absolute md:top-[390px] lg:top-[500px]  w-[94%] relative mx-auto lg:left-[88px] top-[150px] leading-[33px] lg:max-w-[521px] sm:max-w-[500px] md:max-w-max"
       >
         Reliable, safe, and professional delivered exceptional scaffolding
         solutions that perfectly supported our project needs.
@@ -27,7 +27,7 @@ function HeroSection() {
       <div
         data-aos="fade-up"
         data-aos-delay="1200"
-        className="inline-block absolute top-[629px] left-[88px]"
+        className="block w-[94%] mx-auto lg:inline-block lg:absolute md:top-[450px] lg:top-[629px] lg:left-[88px] relative top-[200px]"
       >
         <Link
           data-aos="fade-up"
@@ -42,6 +42,5 @@ function HeroSection() {
     </section>
   );
 }
-
 
 export default HeroSection;

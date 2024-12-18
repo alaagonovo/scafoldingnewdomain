@@ -2,6 +2,7 @@
 import statistics from "@/app/data/statistics";
 import { useIntersectionObserver } from "@/app/lib/useIntersectionObserver";
 import React, { useEffect, useRef, useState } from "react";
+import StaticCard from "./staticCard/StaticCard";
 
 function StatisticsSection() {
   const { isVisible, elementRef } = useIntersectionObserver("0");
@@ -14,6 +15,7 @@ function StatisticsSection() {
   ); // Store interval IDs
   useEffect(() => {
     if (isVisible) {
+      // console.log("visible");
       statistics.forEach((item, index) => {
         handleChangeStatistics(index, item.num);
       });
@@ -43,29 +45,15 @@ function StatisticsSection() {
     }, intervalDelay); // Change the
   };
   return (
-    <section className="grid grid-cols-3 my-12">
+    <section className="grid grid-cols-1 lg:grid-cols-3 my-12">
       {statistics.map((item, index) => (
-        <div
+        <StaticCard
+          index={index}
+          statisticsNum={statisticsNum}
+          elementRef={elementRef}
+          item={item}
           key={index}
-          ref={elementRef}
-          style={{
-            backgroundColor: `${item.bgColor}`,
-            color: `${item.textColor}`,
-          }}
-          className="flex justify-center items-center h-[613px]"
-        >
-          <h1 className="text-[59px] font-bold w-[323px] text-center leading-[70px]">
-            <span
-              style={{ animationDuration: `1ms` }}
-              className="animate-slide"
-            >
-              {statisticsNum[index]}
-            </span>
-            {item?.sign}
-            <br />
-            {item.text}
-          </h1>
-        </div>
+        />
       ))}
     </section>
   );

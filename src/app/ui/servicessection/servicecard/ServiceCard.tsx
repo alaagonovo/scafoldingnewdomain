@@ -26,7 +26,7 @@ function ServiceCard({
           className="rounded-lg"
         />
       </div>
-      <h3 className="text-[22px] font-semibold text-btnbg text-left w-full mb-2 ">
+      <h3 className="text-[22px] font-semibold text-btnbg text-left w-full mb-2 max-h-[33px] overflow-hidden">
         {serviceDetails.title}
       </h3>
       <p className="text-btnbg text-[18px] font-medium max-h-[81px] overflow-hidden">

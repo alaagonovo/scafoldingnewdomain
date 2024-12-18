@@ -19,7 +19,7 @@ function ProCard({
     <div
       data-aos="fade-left"
       data-aos-delay={`${300 * index}`}
-      className="flex flex-col justify-center items-center p-10 border border-white rounded-xl "
+      className="flex flex-col justify-center items-center p-7 md:p-10  border border-white rounded-xl "
     >
       <div className="relative w-[100%] h-[318px] mb-6">
         <Image
@@ -29,7 +29,7 @@ function ProCard({
           className="rounded-lg"
         />
       </div>
-      <h3 className="text-[22px] font-semibold text-white text-left w-full mb-2 ">
+      <h3 className="text-[22px] font-semibold text-white text-left w-full mb-2  max-h-[33px] overflow-hidden">
         {projectDetail.name}
       </h3>
       <p className="text-white text-[18px] font-medium max-h-[54px] overflow-hidden">
