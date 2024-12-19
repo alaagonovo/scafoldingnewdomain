@@ -8,7 +8,7 @@ import Footer from "./ui/common/footer/Footer";
 
 const urbanist = Urbanist({
   subsets: ["latin"], // Add other subsets if needed
-  weight: ["400", "700"], // Specify the font weights you need
+  weight: ["100", "200", "300", "400", "500", "600", "700"], // Specify the font weights you need
 });
 
 export const metadata: Metadata = {

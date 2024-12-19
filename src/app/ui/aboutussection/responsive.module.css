@@ -24,13 +24,15 @@
     height: 400px;
   }
   .paragraph {
-    width: 96%;
+    width: 92%;
     margin-inline-start: auto;
     margin-inline-end: auto;
+    margin-top: 48px;
   }
   .btn_link {
     display: block;
-    margin-inline-start: 2%;
+
+    margin-inline-start: 16px;
   }
 }
 @media (max-width: 440px) {

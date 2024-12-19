@@ -114,11 +114,17 @@ function ReviewCard({
                 height={44}
               />
 
-              <h1 className="text-[28px] lg:text-[33px] font-semibold text-btnbg mb-7">
+              <h1 className="text-[28px] lg:text-[33px] font-semibold text-btnbg mb-3 lg:mb-7">
                 {review.caption}
               </h1>
               <p className="text-[20px] leading-8 text-btnbg font-normal max-h-24 overflow-hidden">
                 {review.review}
+              </p>
+              {/* static ele */}
+              <p className="text-sm leading-[22px] font-semibold text-btnbg mt-3 block lg:hidden">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi.
               </p>
               <Reviewer
                 clientImage={review.clientImage}

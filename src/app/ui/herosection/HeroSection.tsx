@@ -11,7 +11,7 @@ function HeroSection() {
       <h2
         data-aos="fade-up"
         data-aos-delay="600"
-        className="text-white text-5xl sm:max-w-[500px] md:max-w-max  font-[500] lg:absolute top-28 md:top-[318px] lg:left-[88px] w-[94%] relative mx-auto   leading-[66px]"
+        className="text-white text-5xl sm:max-w-[500px] md:max-w-max  lg:absolute top-28 md:top-[318px] lg:left-[88px] w-[92%] relative mx-auto leading-[66px]"
       >
         Explore Our Expertly Designed Scaffolding
         <br /> Solutions. Built for Strength and Safety
@@ -19,7 +19,7 @@ function HeroSection() {
       <p
         data-aos="fade-up"
         data-aos-delay="900"
-        className="text-white text-[22px]  lg:absolute md:top-[390px] lg:top-[500px]  w-[94%] relative mx-auto lg:left-[88px] top-[150px] leading-[33px] lg:max-w-[521px] sm:max-w-[500px] md:max-w-max"
+        className="text-white text-[22px]  lg:absolute md:top-[390px] lg:top-[500px]  w-[92%] relative mx-auto lg:left-[88px] top-[150px] leading-[33px] lg:max-w-[521px] sm:max-w-[500px] md:max-w-max"
       >
         Reliable, safe, and professional delivered exceptional scaffolding
         solutions that perfectly supported our project needs.
@@ -27,7 +27,7 @@ function HeroSection() {
       <div
         data-aos="fade-up"
         data-aos-delay="1200"
-        className="block w-[94%] mx-auto lg:inline-block lg:absolute md:top-[450px] lg:top-[629px] lg:left-[88px] relative top-[200px]"
+        className="block w-[92%] mx-auto lg:inline-block lg:absolute md:top-[450px] lg:top-[629px] lg:left-[88px] relative top-[200px]"
       >
         <Link
           data-aos="fade-up"

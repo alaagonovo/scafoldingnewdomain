@@ -12,17 +12,14 @@ function Header() {
       <div
         data-aos="fade-up"
         data-aos-delay="300"
-        className="bg-white py-4 px-8 lg:rounded-[63px] md:rounded-none"
+        className="bg-white p-4 lg:py-4 lg:px-8 lg:rounded-[63px] md:rounded-none"
       >
         {/* logo */}
         <div className="flex items-center relative justify-between">
           <div className="flex gap-2">
-            <div className="relative w-[30px] h-[30px]">
-              <Image src="/svgs/logo.svg" alt="logo" fill />
+            <div className="relative w-[260px] h-[31px] ">
+              <Image src="/svgs/logolap.svg" alt="logo" fill />
             </div>
-            <h2 className="relative  my-auto w-max font-[6a00]">
-              Hendles Builders
-            </h2>
           </div>
           {/* links */}
           <ul className={`flex gap-[44px] max-w-[520px] ${styles.dis_none}`}>

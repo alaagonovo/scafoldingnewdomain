@@ -17,7 +17,7 @@ function CompletedPro() {
           <p
             data-aos="fade-up"
             data-aos-delay="300"
-            className="w-[870px] text-white text-sm md:text-[18px] md:leading-7 font-medium"
+            className="w-[870px] text-white text-sm md:text-[18px] md:leading-7"
           >
             Explore our handpicked selection of featured properties. Each
             listing offers a glimpse into exceptional homes and investments

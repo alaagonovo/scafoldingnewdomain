@@ -26,7 +26,7 @@ function Faqs() {
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="max-w-full lg:max-w-[768px] mt-5 text-white text-lg"
+          className="max-w-full lg:max-w-[768px] mt-5 font-light lg:font-normal text-white text-lg"
         >
           Everything you need to know about the product and billing. Can’t find
           the answer you’re looking for? Please

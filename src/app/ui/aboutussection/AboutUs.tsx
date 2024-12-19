@@ -5,10 +5,13 @@ import styles from "./responsive.module.css";
 function AboutUs() {
   return (
     <section
-      className={`${styles.grid_Responsive} main_wrapper grid grid-cols-2 py-20 overflow-hidden`}
+      className={`${styles.grid_Responsive} main_wrapper grid grid-cols-2 pt-16 pb-[85px] overflow-hidden`}
     >
       <div>
-        <h1 className="text-5xl font-semibold mb-14" data-aos="fade-up">
+        <h1
+          className="text-5xl font-semibold ml-4 lg:ml-0 mb-10"
+          data-aos="fade-up"
+        >
           About Us
         </h1>
         <div className={`${styles.image_responsive} relative hidden`}>

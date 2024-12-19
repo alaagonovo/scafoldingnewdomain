@@ -16,7 +16,7 @@ function FaqsCard({ question, answer }: IFaqs) {
       <p
         data-aos="fade-up"
         data-aos-delay="600"
-        className="text-base leading-6 font-normal mt-2 text-white"
+        className="text-base leading-6 font-light lg:font-normal mt-2 text-white"
       >
         {answer}
       </p>
