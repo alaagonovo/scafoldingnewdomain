@@ -11,7 +11,7 @@ function HeroSection() {
       <h2
         data-aos="fade-up"
         data-aos-delay="600"
-        className="text-white text-5xl sm:max-w-[500px] md:max-w-max  lg:absolute top-28 md:top-[318px] lg:left-[88px] w-[92%] relative mx-auto leading-[66px]"
+        className="text-white text-[44px] lg:text-5xl sm:max-w-[500px] md:max-w-max  lg:absolute top-28 md:top-[318px] lg:left-[88px] w-[92%] relative mx-auto leading-[66px] lg:leading-[66px]"
       >
         Explore Our Expertly Designed Scaffolding
         <br /> Solutions. Built for Strength and Safety
