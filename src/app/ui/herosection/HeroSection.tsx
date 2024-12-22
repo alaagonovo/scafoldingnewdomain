@@ -34,7 +34,7 @@ function HeroSection() {
           data-aos-delay="1500"
           style={{ transition: "all 300ms" }}
           className="text-white text-[22px]     ring-1 ring-white rounded-[68px] px-12 py-3 hover:bg-btnbg hover:ring-0"
-          href="/"
+          href="/getaquote"
         >
           Get a Quote
         </Link>
