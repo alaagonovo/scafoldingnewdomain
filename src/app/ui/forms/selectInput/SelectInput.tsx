@@ -48,7 +48,7 @@ function SelectInput({
     <div className="relative w-full">
       <label
         htmlFor={name}
-        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        className="block mb-2 text-sm font-medium text-labelColor"
       >
         {label}
       </label>

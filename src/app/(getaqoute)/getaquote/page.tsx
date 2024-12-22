@@ -63,7 +63,7 @@ export default function GetAQuotePage() {
       setReset(true);
       setTimeout(() => {
         setReset(false);
-      }, 1000);
+      }, 2000);
     } else {
       console.log("Validation failed");
     }

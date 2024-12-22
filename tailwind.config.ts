@@ -21,6 +21,7 @@ export default {
         time: "var(--footer-times-color)",
         placeholderColor: "var(--placeholder-text-color)",
         borderColor: "var(--border-inputs-color)",
+        labelColor: "var(--label-form-color)",
       },
       boxShadow: {
         procardshade:
