@@ -29,7 +29,7 @@ function Footer() {
             Contact Info
           </h1>
           <p
-            className="text-2xl md:text-3xl leading-10 font-medium mb-7 xl:mb-14"
+            className="text-2xl md:text-3xl leading-10 font-medium mb-7 xl:mb-10"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -37,7 +37,7 @@ function Footer() {
             BRENTFORD, TW8 9DW
           </p>
           <p
-            className="text-2xl md:text-3xl leading-10 font-medium mb-10 xl:mb-20"
+            className="text-2xl md:text-3xl leading-10 font-medium mb-10 xl:mb-14"
             data-aos="fade-up"
             data-aos-delay="400"
           >
@@ -45,6 +45,16 @@ function Footer() {
             <br />
             info@thescaffolding.co.uk
           </p>
+          <p
+            className="text-2xl md:text-3xl leading-10 font-medium mb-10 xl:mb-14"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            Company Number
+            <br />
+            16055779
+          </p>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 xl:gap-14">
             <div>
               <h2
@@ -62,25 +72,6 @@ function Footer() {
                 Monday to Friday
                 <br />
                 9:00 am to 6:00 pm
-              </p>
-              <p
-                className="text-2xl text-time mb-4"
-                data-aos="fade-up"
-                data-aos-delay="700"
-              >
-                Saturday
-                <br />
-                9:00 am to 12:00 pm
-              </p>
-              <p
-                className="text-2xl text-time"
-                data-aos="fade-up"
-                data-aos-delay="800"
-                data-aos-offset="50"
-              >
-                Sunday
-                <br />
-                appointment only
               </p>
             </div>
             <div className="flex flex-col justify-between gap-8 sm:gap-0">
@@ -138,15 +129,15 @@ function Footer() {
                   </Link>
                 </div>
               </div>
-              <div
-                className="relative w-[220px] h-[36px]"
-                data-aos="fade-up"
-                data-aos-delay="700"
-                data-aos-offset="50"
-              >
-                <Image src="/svgs/logofoot.svg" alt="logo" fill />
-              </div>
             </div>
+          </div>
+          <div
+            className="relative mx-auto w-[345px] h-[44px] sm:w-[408px] sm:h-[50px] mt-10"
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-offset="50"
+          >
+            <Image src="/svgs/logolap.svg" alt="logo" fill />
           </div>
         </div>
       </div>

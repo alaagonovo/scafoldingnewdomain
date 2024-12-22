@@ -26,7 +26,7 @@ function Vision() {
           </div>
           <div
             data-aos="fade-up"
-            className="w-[334px] h-[47px]  mb-10 hidden lg:block"
+            className="w-[417px] h-[50px]  mb-10 hidden lg:block"
           >
             <Image src="/svgs/vissionlogolap.svg" alt="logo vission" fill />
           </div>

@@ -28,28 +28,30 @@ function AboutUs() {
           />
         </div>
         <p
-          className={`${styles.paragraph} text-[1.375rem] leading-[33px] w-[520px] font-medium my-6`}
+          className={`${styles.paragraph} text-[1.375rem] leading-[33px] w-[609px] font-medium my-6`}
           data-aos="fade-up"
         >
-          Our experience with Estatein was outstanding. Their team&apos;s
-          dedication and professionalism made finding our dream home a breeze.
-          Highly recommended!
+          Face2Face was founded on a vision imagined in London nearly two
+          decades ago. From our early beginnings in Europe, we set out to
+          redefine the scaffolding industry with an unwavering commitment to
+          innovation, safety, and sustainability.
         </p>
         <p
-          className={`${styles.paragraph} text-[1.375rem] leading-[33px] w-[520px] font-medium my-6`}
+          className={`${styles.paragraph} text-[1.375rem] leading-[33px] w-[609px] font-medium my-6`}
           data-aos="fade-up"
         >
-          Our experience with Estatein was outstanding. Their team&apos;s
-          dedication and professionalism made finding our dream home a breeze.
-          Highly recommended!
+          Safety has always been our cornerstone. Over 18 years, we have proudly
+          maintained a 0% accident rate thanks to our meticulous planning and
+          rigorous procedures, from assembly to dismantling.
         </p>
         <p
-          className={`${styles.paragraph} text-[1.375rem] leading-[33px] w-[520px] font-medium my-6`}
+          className={`${styles.paragraph} text-[1.375rem] leading-[33px] w-[609px] font-medium my-6`}
           data-aos="fade-up"
         >
-          Our experience with Estatein was outstanding. Their team&apos;s
-          dedication and professionalism made finding our dream home a breeze.
-          Highly recommended!
+          Today, in 2025, we stand as a testament to the power of consistent
+          innovation and craftsmanship. Face2Face is more than a scaffolding
+          company—we are a promise to deliver solutions that embody reliability
+          and sustainability.
         </p>
         <div
           data-aos="fade-up"
@@ -66,7 +68,7 @@ function AboutUs() {
       </div>
       <div
         style={{ marginInlineStart: "calc(100% - 571px)" }}
-        className={`${styles.large_image} relative h-[607px] max-w-[571px]`}
+        className={`${styles.large_image} relative h-[697px] max-w-[571px]`}
       >
         <Image
           src="/assets/aboutuss.webp"
