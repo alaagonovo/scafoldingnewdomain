@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 interface IPro {
   image: string;
   category: string;
@@ -7,9 +8,20 @@ interface IPro {
   description: string;
   date: string;
 }
-function Projectcard({ pro }: { pro: IPro }) {
+function Projectcard({ pro, index }: { pro: IPro; index: number }) {
+  const cardRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    // Check screen width and remove AOS only for this card
+    if (window.innerWidth <= 905 && cardRef.current && index !== 0) {
+      cardRef.current.removeAttribute("data-aos");
+      cardRef.current.removeAttribute("data-aos-delay"); // Optional: Remove delay
+    }
+  }, []);
+
   return (
     <div
+      ref={cardRef}
       data-aos="zoom-in-out"
       data-aos-delay="400"
       className="shadow-procardshade box-border w-[362px] sm:w-[384px] rounded-lg p-6 pb-8 bg-white z-10 h-fit"

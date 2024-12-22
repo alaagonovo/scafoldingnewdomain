@@ -18,7 +18,7 @@ function Footer() {
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          <Image src="/assets/footerview.webp" alt="" fill />
+          <Image src="/assets/footerview.webp" alt="" fill objectFit="cover" />
         </div>
         <div className="xl:ml-20 ml-0 sm:ml-10">
           <h1
