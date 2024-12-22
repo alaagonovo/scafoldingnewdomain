@@ -2,7 +2,7 @@
   .grid_cont {
     grid-template-columns: 1fr;
     margin-top: -60px;
-    height: 700px;
+    height: 650px;
     overflow-y: scroll;
   }
 }
