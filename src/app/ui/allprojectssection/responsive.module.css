@@ -1,0 +1,6 @@
+@media (max-width: 905px) {
+  .grid_cont {
+    grid-template-columns: 1fr;
+    margin-top: -60px;
+  }
+}

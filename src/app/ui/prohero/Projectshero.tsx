@@ -4,7 +4,7 @@ import React from "react";
 function Projectshero() {
   return (
     <section className="h-[688px] bg-btnbg relative">
-      <div className="w-[960px] top-44 left-1/2 -translate-x-1/2  mx-auto text-center text-white absolute">
+      <div className="w-[92%] lg:w-[960px] top-32 lg:top-44 left-1/2 -translate-x-1/2  lg:mx-auto text-center text-white absolute">
         <p
           data-aos="fade-up"
           data-aos-delay="400"
@@ -22,7 +22,7 @@ function Projectshero() {
         <p
           data-aos="fade-up"
           data-aos-delay="600"
-          className="max-w-[768px] mx-auto text-xl font-normal leading-7 mb-10"
+          className="max-w-[768px] mx-auto text-xl font-light leading-7 mb-10"
         >
           Explore our portfolio of innovative scaffolding solutions, supporting
           projects of all sizes in construction, maintenance, and restoration.

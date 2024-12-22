@@ -19,6 +19,8 @@ export default {
         reviewdark: "var(--review-dark-color)",
         footerbg: "var(--footer-bg-color)",
         time: "var(--footer-times-color)",
+        placeholderColor: "var(--placeholder-text-color)",
+        borderColor: "var(--border-inputs-color)",
       },
       boxShadow: {
         procardshade:

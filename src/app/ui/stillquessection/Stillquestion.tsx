@@ -4,7 +4,7 @@ import React from "react";
 function Stillquestion() {
   return (
     <section className="mt-16 bg-btnbg">
-      <div className="p-20 text-center text-white ">
+      <div className="px-4 py-20 lg:p-20 text-center text-white ">
         <h1
           data-aos="fade-up"
           data-aos-delay="100"
@@ -15,7 +15,7 @@ function Stillquestion() {
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="text-xl leading-[30px] mt-2"
+          className="text-xl leading-[30px] mt-2 font-light"
         >
           We’ love to hear from you. Our friendly team is always here to chat
         </p>

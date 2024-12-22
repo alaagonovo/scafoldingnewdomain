@@ -12,9 +12,9 @@ function Projectcard({ pro }: { pro: IPro }) {
     <div
       data-aos="zoom-in-out"
       data-aos-delay="400"
-      className="shadow-procardshade w-[384px] rounded-lg p-6 bg-white z-10 h-fit"
+      className="shadow-procardshade box-border w-[362px] sm:w-[384px] rounded-lg p-6 pb-8 bg-white z-10 h-fit"
     >
-      <div className="relative w-[336px] h-[240px] rounded-lg overflow-hidden">
+      <div className="relative w-[314px] sm:w-[336px] h-[240px] rounded-lg overflow-hidden">
         <Image src={pro.image} alt="image project" fill objectFit="cover" />
       </div>
       <p className="text-sm font-semibold mt-6 mb-2 text-lightBlue">

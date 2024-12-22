@@ -28,7 +28,7 @@ function Services() {
             data-aos="fade-left"
             data-aos-delay="300"
             className="text-white text-[18px] md:text-[22px] inline-block ring-1 ring-white rounded-[68px] bg-btnbg px-7 py-3 md:px-12 md:py-3"
-            href="/"
+            href="/getaquote"
           >
             Get a Quote
           </Link>

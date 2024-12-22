@@ -37,7 +37,7 @@ function Header() {
           {isOpen && <Aside isOpen={isOpen} />}
           {/* get qoute button */}
           <Link
-            href="/"
+            href="/getaquote"
             className={`bg-btnbg px-7 py-[10px] text-base text-white rounded-3xl ${styles.dis_none}`}
           >
             Get a Quote
