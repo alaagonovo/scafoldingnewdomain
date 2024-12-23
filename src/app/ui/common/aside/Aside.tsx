@@ -10,6 +10,9 @@ function Aside({
   isOpen: boolean;
   setIsOpen: (value: boolean) => void;
 }) {
+  const handleClick = () => {
+    setIsOpen(false);
+  };
   return (
     <aside className="bg-bgAside backdrop-blur-lg h-[100vh] fixed inset-0 w-full">
       <div
@@ -33,6 +36,7 @@ function Aside({
           >
             <Link
               className="py-2 px-3 block font-[500] text-[18px]"
+              onClick={() => handleClick()}
               href={link.path}
             >
               {link.name}
