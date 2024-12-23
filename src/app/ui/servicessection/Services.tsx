@@ -19,10 +19,9 @@ function Services() {
             data-aos-delay="300"
             className="w-[870px] text-sm md:text-[18px] font-medium md:leading-7"
           >
-            Explore our handpicked selection of featured properties. Each
-            listing offers a glimpse into exceptional homes and investments
-            available through Estatein. Click &quot;View Details&quot; for more
-            information.
+            Discover Our Comprehensive Range of Scaffolding Services, Expertly
+            Designed to Support Construction, Maintenance, and Restoration
+            Projects.
           </p>
           <Link
             data-aos="fade-left"

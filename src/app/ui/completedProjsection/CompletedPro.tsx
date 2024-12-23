@@ -9,7 +9,7 @@ function CompletedPro() {
       <div className="mx-auto w-[92%] md:w-[88%]">
         <h1
           data-aos="fade-up"
-          className="text-white text-3xl md:text-[3rem] font-semibold mb-[14px]"
+          className="text-white text-3xl md:text-[3rem] font-semibold mb-[14px] md:leading-[72px]"
         >
           Completed Projects
         </h1>
@@ -19,10 +19,8 @@ function CompletedPro() {
             data-aos-delay="300"
             className="w-[870px] text-white text-sm md:text-[18px] md:leading-7"
           >
-            Explore our handpicked selection of featured properties. Each
-            listing offers a glimpse into exceptional homes and investments
-            available through Estatein. Click &quot;View Details&quot; for more
-            information.
+            Explore Our Portfolio of Completed Scaffolding Projects: Showcasing
+            Precision, Innovation, and Excellence Across Diverse Structures.
           </p>
           <Link
             data-aos="fade-left"

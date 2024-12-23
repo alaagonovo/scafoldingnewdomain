@@ -18,7 +18,13 @@ function Footer() {
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          <Image src="/assets/footerview.webp" alt="" fill objectFit="cover" />
+          <Image
+            src="/assets/footerview.webp"
+            alt=""
+            fill
+            objectFit="cover"
+            objectPosition="top"
+          />
         </div>
         <div className="xl:ml-20 ml-0 sm:ml-10">
           <h1
@@ -132,7 +138,7 @@ function Footer() {
             </div>
           </div>
           <div
-            className="relative mx-auto w-[345px] h-[44px] sm:w-[408px] sm:h-[50px] mt-10"
+            className="relative  w-[345px] h-[44px] sm:w-[408px] sm:h-[50px] mt-10"
             data-aos="fade-up"
             data-aos-delay="700"
             data-aos-offset="50"

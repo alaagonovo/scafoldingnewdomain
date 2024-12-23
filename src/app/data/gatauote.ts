@@ -2,18 +2,13 @@ const getaquote = [
   {
     label: "What is the type of service?",
     placeholder: "Select service",
-    options: [
-      "Residential property",
-      "Block of flats",
-      "Commercial premises",
-      "Other",
-    ],
+    options: ["Residential property", "Block of flats", "Commercial premises"],
     name: "field1",
   },
   {
     label: "How many levels of scaffolding do you need?",
     placeholder: "Select levels",
-    options: ["1", "2", "3", "4-5", "6-9", "10-19", "20 or more", "Other"],
+    options: ["1", "2", "3", "4-5", "6-9", "10-19", "20 or more"],
     name: "field2",
   },
   {
@@ -40,7 +35,6 @@ const getaquote = [
       "In the next 2 weeks",
       "In the next month",
       "In the next 2-3 months",
-      "Other",
     ],
     name: "field4",
   },

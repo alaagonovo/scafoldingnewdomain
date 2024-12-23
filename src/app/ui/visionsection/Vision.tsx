@@ -20,17 +20,17 @@ function Vision() {
         <div className="flex flex-col items-start">
           <div
             data-aos="fade-up"
-            className="w-[334px] h-[47px]  mb-10 lg:hidden"
+            className="w-[334px] h-[47px]  mb-16 lg:hidden"
           >
             <Image src="/svgs/vissionlogo.svg" alt="logo vission" fill />
           </div>
           <div
             data-aos="fade-up"
-            className="w-[417px] h-[50px]  mb-10 hidden lg:block"
+            className="w-[417px] h-[50px]  mb-16 hidden lg:block"
           >
             <Image src="/svgs/vissionlogolap.svg" alt="logo vission" fill />
           </div>
-          <div className=" w-full md:w-[466px]">
+          <div className="w-full md:w-[466px]">
             <h1
               data-aos="fade-up"
               data-aos-delay="300"

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Downdroparrow from "../../../../../public/svgs/downdroparrow";
 
 interface IFormState {
@@ -15,6 +15,8 @@ function SelectInput({
   reset,
   placeholder,
   index,
+  isOpen,
+  setOpenDropdownIndex,
 }: {
   label: string;
   options: string[];
@@ -24,18 +26,16 @@ function SelectInput({
   placeholder: string;
   reset: boolean;
   index: number;
+  isOpen: boolean;
+  setOpenDropdownIndex: (index: number | null) => void;
 }) {
   const [inputValue, setInputValue] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
-  const [dropInput, setDropInput] = useState(false);
+  // const initialopens=[]
+  // const [isOpen, setIsOpen] = useState<number | null>(null);
 
   const handleSelect = (option: string) => {
-    if (option !== "Other") {
-      setFormValues({ ...formValues, [name]: option });
-      setIsOpen((prev) => !prev);
-    } else {
-      setDropInput((prev) => !prev);
-    }
+    setFormValues({ ...formValues, [name]: option });
+    setOpenDropdownIndex(null);
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -43,6 +43,9 @@ function SelectInput({
 
     setFormValues({ ...formValues, [name]: e.target.value });
   };
+  useEffect(() => {
+    if (reset) setInputValue("");
+  }, [reset]);
 
   return (
     <div className="relative w-full">
@@ -55,8 +58,8 @@ function SelectInput({
 
       {/* Dropdown Button */}
       <div
-        className="flex items-center justify-between  border border-boredrColor  text-sm rounded-lg focus:ring-black  w-full p-2.5  text-placeholderColor cursor-pointer"
-        onClick={() => setIsOpen((prev) => !prev)}
+        className="flex items-center justify-between  border border-boredrColor  text-base rounded-lg focus:ring-black  w-full p-2.5  text-placeholderColor cursor-pointer"
+        onClick={() => setOpenDropdownIndex(isOpen ? null : index)}
       >
         <span className="text-placeholderColor">
           {formValues[name] || `${placeholder}`}
@@ -67,48 +70,36 @@ function SelectInput({
       {/* Dropdown Menu */}
       {isOpen && (
         <ul
-          className={`absolute ${
-            index === 3 ? "top-[-350%]" : ""
-          } bg-white border border-gray-300 rounded-lg mt-1 w-full max-h-60 overflow-auto z-10`}
+          className="absolute 
+           bg-white border border-gray-300 rounded-lg mt-1 w-full max-h-44 overflow-auto z-10"
         >
           {options.map((option, index) => (
             <React.Fragment key={index}>
-              {option === "Other" ? (
-                <div
-                  className="flex justify-between p-2 text-placeholderColor hover:bg-slate-200 cursor-pointer"
-                  onClick={() => setDropInput((prev) => !prev)}
-                >
-                  <span>Others</span>
-                  <Downdroparrow isOpen={dropInput} />
-                </div>
-              ) : (
-                <li
-                  key={index}
-                  onClick={() => handleSelect(option)}
-                  className="p-2 text-placeholderColor hover:bg-slate-200 cursor-pointer"
-                >
-                  {option}
-                </li>
-              )}
+              <li
+                key={index}
+                onClick={() => handleSelect(option)}
+                className="p-2 text-placeholderColor hover:bg-slate-200 cursor-pointer"
+              >
+                {option}
+              </li>
+              {/* )} */}
             </React.Fragment>
           ))}
 
-          {/* Input Field for "Others" */}
-          {dropInput && (
-            <li className="px-2 pb-2 ">
-              <div className="flex items-center h-[44px]">
-                <input
-                  type="text"
-                  value={reset ? "" : inputValue}
-                  onChange={handleInputChange}
-                  name={name}
-                  placeholder="Enter custom option"
-                  required
-                  className="h-full w-full p-2 bg-gray-50 border border-gray-300 text-placeholderColor text-sm rounded-lg "
-                />
-              </div>
-            </li>
-          )}
+          <li className="px-2 pb-2 ">
+            <div className="flex items-center h-[44px]">
+              <input
+                type="text"
+                value={reset ? "" : inputValue}
+                onChange={handleInputChange}
+                name={name}
+                placeholder="Others"
+                required
+                className="h-full w-full p-2 bg-gray-50 border border-gray-300 text-placeholderColor text-sm rounded-lg "
+              />
+            </div>
+          </li>
+          {/* )} */}
         </ul>
       )}
     </div>

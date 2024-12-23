@@ -1,20 +1,20 @@
 const statistics = [
   {
-    num: 99,
-    sign: "%",
+    num: 50,
+    sign: "+",
     text: "Projects Completed",
     bgColor: "#0886F6",
     textColor: "#fff",
   },
   {
-    num: 20,
+    num: 18,
     sign: "+",
     text: "Years In The Market",
     bgColor: "#EEEEF0",
     textColor: "#002F69",
   },
   {
-    num: 12,
+    num: 3,
     text: "Offices Nationwide",
     bgColor: "#002F69",
     textColor: "#fff",

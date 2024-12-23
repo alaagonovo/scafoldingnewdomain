@@ -26,9 +26,9 @@ const ReviewsSection = () => {
             data-aos-delay="300"
             className="w-[870px] text-sm md:text-[18px] font-medium md:leading-7"
           >
-            Read the success stories and heartfelt testimonials from our valued
-            clients. Discover why they chose Estatein for their real estate
-            needs.
+            Discover the Inspiring Success Stories and Heartfelt Testimonials
+            from Our Valued Clients: Learn Why They Trust Face2Face for
+            Exceptional Service
           </p>
           <Link
             data-aos="fade-left"

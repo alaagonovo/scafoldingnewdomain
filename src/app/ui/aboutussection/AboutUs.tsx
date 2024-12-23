@@ -21,23 +21,23 @@ function AboutUs() {
             fill
             objectPosition="center"
             objectFit="cover"
-            className="rounded-xl lg:rounded-lg"
+            className="rounded-none lg:rounded-lg"
             data-aos="zoom-in-out"
             data-aos-delay="400"
             unoptimized={true}
           />
         </div>
         <p
-          className={`${styles.paragraph} text-[1.375rem] leading-[33px] w-[609px] font-medium my-6`}
+          className={`${styles.paragraph} inline-block text-[1.375rem] leading-[33px] lg:max-w-[609px] font-medium my-4 lg:mr-5`}
           data-aos="fade-up"
         >
-          Face2Face was founded on a vision imagined in London nearly two
-          decades ago. From our early beginnings in Europe, we set out to
-          redefine the scaffolding industry with an unwavering commitment to
-          innovation, safety, and sustainability.
+          Face2Face, with 18 years of excellence across Europe, now proudly
+          brings its innovative scaffolding solutions to London. By utilizing
+          100% metal materials, we ensure durable, sustainable, and cutting-edge
+          approaches to modern construction.
         </p>
         <p
-          className={`${styles.paragraph} text-[1.375rem] leading-[33px] w-[609px] font-medium my-6`}
+          className={`${styles.paragraph} inline-block text-[1.375rem] leading-[33px] lg:max-w-[609px] font-medium my-4 lg:mr-5`}
           data-aos="fade-up"
         >
           Safety has always been our cornerstone. Over 18 years, we have proudly
@@ -45,7 +45,7 @@ function AboutUs() {
           rigorous procedures, from assembly to dismantling.
         </p>
         <p
-          className={`${styles.paragraph} text-[1.375rem] leading-[33px] w-[609px] font-medium my-6`}
+          className={`${styles.paragraph} inline-block text-[1.375rem] leading-[33px] lg:max-w-[609px] max-w-full font-medium my-4 lg:mr-5`}
           data-aos="fade-up"
         >
           Today, in 2025, we stand as a testament to the power of consistent
@@ -67,8 +67,8 @@ function AboutUs() {
         </div>
       </div>
       <div
-        style={{ marginInlineStart: "calc(100% - 571px)" }}
-        className={`${styles.large_image} relative h-[697px] max-w-[571px]`}
+        style={{}}
+        className={`${styles.large_image} relative h-[697px] lg:max-w-[571px] max-w-full`}
       >
         <Image
           src="/assets/aboutuss.webp"

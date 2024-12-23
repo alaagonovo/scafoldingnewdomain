@@ -8,36 +8,37 @@ function HeroSection() {
       style={{ backgroundImage: `url(/assets/herocover.webp)` }}
     >
       <div className="absolute inset-0 bg-black/20"></div>
-      <h2
-        data-aos="fade-up"
-        data-aos-delay="600"
-        className="text-white text-[44px] lg:text-5xl sm:max-w-[500px] md:max-w-max  lg:absolute top-28 md:top-[318px] lg:left-[88px] w-[92%] relative mx-auto leading-[66px] lg:leading-[66px]"
-      >
-        Explore Our Expertly Designed Scaffolding
-        <br /> Solutions. Built for Strength and Safety
-      </h2>
-      <p
-        data-aos="fade-up"
-        data-aos-delay="900"
-        className="text-white text-[22px]  lg:absolute md:top-[390px] lg:top-[500px]  w-[92%] relative mx-auto lg:left-[88px] top-[150px] leading-[33px] lg:max-w-[521px] sm:max-w-[500px] md:max-w-max"
-      >
-        Reliable, safe, and professional delivered exceptional scaffolding
-        solutions that perfectly supported our project needs.
-      </p>
-      <div
-        data-aos="fade-up"
-        data-aos-delay="1200"
-        className="block w-[92%] mx-auto lg:inline-block lg:absolute md:top-[450px] lg:top-[629px] lg:left-[88px] relative top-[200px]"
-      >
-        <Link
+      <div className="flex flex-col absolute w-[92%]  top-28 md:top-[318px]  md:max-w-max  sm:max-w-[500px] lg:left-[88px] left-4 gap-8">
+        <h2
           data-aos="fade-up"
-          data-aos-delay="1500"
-          style={{ transition: "all 300ms" }}
-          className="text-white text-[22px]     ring-1 ring-white rounded-[68px] px-12 py-3 hover:bg-btnbg hover:ring-0"
-          href="/getaquote"
+          data-aos-delay="450"
+          className="text-white text-[44px] lg:text-5xl relative  leading-[66px] lg:leading-[66px]"
         >
-          Get a Quote
-        </Link>
+          Explore Our Expertly Designed Scaffolding
+          <br /> Solutions. Built for Strength and Safety
+        </h2>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="600"
+          className="text-white text-[22px]   leading-[33px] lg:max-w-[521px]"
+        >
+          Reliable, safe, and professional delivered exceptional scaffolding
+          solutions that perfectly supported our project needs.
+        </p>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="750"
+          data-aos-offset="0"
+          className="mt-4"
+        >
+          <Link
+            style={{ transition: "all 300ms" }}
+            className="text-white text-[22px] inline-block w-fit ring-1 ring-white rounded-[68px] px-12 py-3 hover:bg-btnbg hover:ring-0"
+            href="/getaquote"
+          >
+            Get a Quote
+          </Link>
+        </div>
       </div>
     </section>
   );

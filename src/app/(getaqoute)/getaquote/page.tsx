@@ -25,6 +25,9 @@ export default function GetAQuotePage() {
     field5: "",
   });
   const [reset, setReset] = useState(false);
+  const [openDropdownIndex, setOpenDropdownIndex] = useState<number | null>(
+    null
+  );
   const handleFormValuesUpdate = (
     updatedValues: Partial<typeof formValues>
   ) => {
@@ -89,6 +92,8 @@ export default function GetAQuotePage() {
               setFormValues={handleFormValuesUpdate}
               reset={reset}
               index={index}
+              isOpen={openDropdownIndex === index}
+              setOpenDropdownIndex={setOpenDropdownIndex}
             />
             {errors[field.name as keyof typeof errors] && (
               <p className="text-red-500 text-sm mt-1 absolute">
@@ -98,10 +103,15 @@ export default function GetAQuotePage() {
           </div>
         ))}
 
-        <div className="relative" data-aos="fade-up" data-aos-delay="550">
+        <div
+          className="relative"
+          data-aos="fade-up"
+          data-aos-delay="550"
+          data-aos-offset="0"
+        >
           <label
             htmlFor="first_name"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-sm font-medium text-labelColor"
           >
             Where do you need the Scaffolder?
           </label>
@@ -113,7 +123,8 @@ export default function GetAQuotePage() {
             onChange={(e) => {
               setFormValues({ ...formValues, [e.target.name]: e.target.value });
             }}
-            className="text-placeholderColor text-sm rounded-lg  block w-full p-2.5 placeholder-placeholderColor border border-borderColor"
+            onClick={() => setOpenDropdownIndex(null)}
+            className="text-placeholderColor text-base rounded-lg  block w-full p-2.5 placeholder-placeholderColor border border-borderColor"
             placeholder="Enter your postcode or town"
             required
           />
@@ -121,7 +132,7 @@ export default function GetAQuotePage() {
         <input
           type="submit"
           value="Send Your Quote"
-          className="px-4 py-2 mt-3 bg-btnbg text-white rounded-3xl font-semibold cursor-pointer"
+          className="px-4 py-3 mt-3 bg-btnbg text-white rounded-3xl font-semibold cursor-pointer"
           data-aos="fade-up"
           data-aos-delay="650"
           data-aos-offset="0"

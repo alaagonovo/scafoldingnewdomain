@@ -17,9 +17,9 @@ export default function GetAQuoteLayout({
     <html lang="en">
       <body className={urbanist.className}>
         <WithAOS>
-          <div className="grid grid-cols-1 gap-12 mt-12 lg:mt-0 lg:gap-0 lg:grid-cols-[464px,1fr]">
+          <div className="grid grid-cols-1 gap-12  lg:gap-0 lg:grid-cols-[464px,1fr]">
             <AsideForm />
-            <main className="order-1 lg:order-2 relative my-12 flex justify-center items-center">
+            <main className="order-1 lg:order-2 relative my-12   flex justify-center items-center lg:min-h-[100vh]">
               {children}
             </main>
           </div>
