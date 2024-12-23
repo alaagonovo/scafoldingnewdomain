@@ -45,7 +45,7 @@ function StatisticsSection() {
     }, intervalDelay); // Change the
   };
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-3 my-16">
+    <section className="grid grid-cols-1 lg:grid-cols-3 my-16 md:my-24">
       {statistics.map((item, index) => (
         <StaticCard
           index={index}

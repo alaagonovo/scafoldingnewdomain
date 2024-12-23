@@ -5,7 +5,7 @@ import services from "@/app/data/services";
 
 function Services() {
   return (
-    <section className="overflow-hidden mb-12">
+    <section className="overflow-hidden mb-16 md:mb-24 ">
       <div className="mx-auto w-[92%] md:w-[88%]">
         <h1
           data-aos="fade-up"
@@ -32,7 +32,7 @@ function Services() {
             Get a Quote
           </Link>
         </div>
-        <div className="grid mt-16 mx-auto   grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid mt-12 mx-auto   grid-cols-1 lg:grid-cols-3 gap-12">
           {services.map((service, index) => (
             <ServiceCard
               serviceDetails={service}

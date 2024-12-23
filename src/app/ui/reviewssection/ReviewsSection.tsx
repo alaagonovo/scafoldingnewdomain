@@ -13,7 +13,7 @@ const ReviewsSection = () => {
 
   return (
     <section className="overflow-hidden">
-      <div className="mx-auto w-[92%] md:w-[88%] mt-12 mb-20 lg:mb-8">
+      <div className="mx-auto w-[92%] md:w-[88%] mt-16 md:mt-24 mb-20 lg:mb-8">
         <h1
           data-aos="fade-up"
           className="text-3xl md:text-[3rem] font-semibold mb-[14px] md:leading-[72px]"
@@ -41,9 +41,9 @@ const ReviewsSection = () => {
         </div>
       </div>
       <div
-        // data-aos="zoom-in-out"
-        // data-aos-delay="600"
-        className={styles.container}
+        data-aos="zoom-in-out"
+        data-aos-delay="600"
+        className={`${styles.container} mb-16 md:mb-24 mx-auto`}
       >
         {reviews.map((item, index) => (
           <ReviewCard

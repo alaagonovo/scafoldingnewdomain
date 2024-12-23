@@ -7,16 +7,17 @@
   display: flex;
   justify-content: center;
   width: 88%;
-  margin: 3rem auto;
+  /* margin: 3rem auto; */
 }
 
 .card {
   width: 252px;
   height: 517px;
-  margin: 0 -3rem;
+  margin: 0 -2rem;
   overflow: hidden;
   position: relative;
-  border-radius: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
   transition: all 500ms;
 }
 .card img {

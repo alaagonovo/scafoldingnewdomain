@@ -28,7 +28,12 @@ function ReviewCard({
       key={review.id}
       id={review.id}
       style={index === 0 ? { zIndex: "4" } : { zIndex: `${4 - index}` }}
-      className={`${styles.card} ${
+      className={`${styles.card}
+         ${
+           index === 0
+             ? "rounded-3xl lg:rounded-[45px]"
+             : "lg:rounded-tl-none lg:rounded-bl-none"
+         }  ${
         activeCard === review.id
           ? index === 0
             ? styles.active
@@ -49,7 +54,7 @@ function ReviewCard({
               ? "bg-reviewsemilight"
               : "bg-reviewsemidark"
             : "bg-reviewdark"
-        } w-full h-full rounded-3xl lg:rounded-[45px]`}
+        } w-full h-full`}
       >
         {activeCard !== review.id ? (
           <div
@@ -59,7 +64,7 @@ function ReviewCard({
           >
             <div
               className={`relative top-0 left-0 lg:absolute lg:top-6 ${
-                index === 0 ? "lg:left-8" : "lg:left-32"
+                index === 0 ? "lg:left-8" : "lg:left-24"
               }
                 
               }`}
@@ -67,12 +72,13 @@ function ReviewCard({
               <p
                 className={`bg-white py-1 px-4 text-[12px] w-fit font-semibold text-reviewTitle rounded-md hidden lg:block ${styles.otherAnimation}`}
               >
-                Label
+                Feedback
               </p>
               <h3
-                className={`text-reviewTitle text-[24px] font-semibold mt-0 lg:mt-6 ${styles.otherAnimation}`}
+                className={`text-reviewTitle text-[24px] w-full lg:max-w-[140px] font-semibold mt-0 lg:mt-6 line-clamp-2 ${styles.otherAnimation}`}
               >
-                Section {index + 1}
+                {review.caption}
+                {/* Section {index + 1} */}
               </h3>
             </div>
             <div
@@ -95,42 +101,47 @@ function ReviewCard({
           </div>
         ) : (
           <div
-            className={`max-w-full ml-0   ${index !== 0 ? "lg:ml-24 " : ""}`}
+            className={`max-w-full ml-0 h-full   ${
+              index !== 0 ? "lg:ml-24 " : ""
+            }`}
           >
             <div
-              className={`px-[32px] py-[26px] ${
+              className={`px-[32px] py-[26px] h-full ${
                 index === +activeCard && index !== 0 && "pt-[40px] lg:pt-[26px]"
               } ${index !== 0 ? styles.otherAnimation : styles.firstAnimation}`}
             >
               <p className="bg-white py-1 px-4 text-[12px] font-semibold text-reviewTitle rounded-md w-fit hidden lg:block">
-                Label
+                Feedback
               </p>
+              <div className="flex flex-col justify-between h-full lg:h-[95%]">
+                <div>
+                  <Image
+                    className="mt-7 mb-6 hidden lg:block"
+                    src="/svgs/rate.svg"
+                    alt=""
+                    width={260}
+                    height={44}
+                  />
 
-              <Image
-                className="mt-7 mb-6 hidden lg:block"
-                src="/svgs/rate.svg"
-                alt=""
-                width={260}
-                height={44}
-              />
-
-              <h1 className="text-[28px] lg:text-[33px] font-semibold text-btnbg mb-3 lg:mb-7">
-                {review.caption}
-              </h1>
-              <p className="text-[20px] leading-8 text-btnbg font-normal max-h-24 overflow-hidden">
-                {review.review}
-              </p>
-              {/* static ele */}
-              <p className="text-sm leading-[22px] font-semibold text-btnbg mt-3 block lg:hidden">
+                  <h1 className="text-[28px] lg:text-[33px] font-semibold text-btnbg mb-3 lg:mb-7">
+                    {review.caption}
+                  </h1>
+                  <p className="text-[20px] leading-8 text-btnbg font-normal max-h-48 sm:max-h-max overflow-hidden">
+                    {review.review}
+                  </p>
+                </div>
+                <Reviewer
+                  clientImage={review.clientImage}
+                  clientName={review.clientName}
+                  clientPlace={review.clientPlace}
+                />
+                {/* static ele */}
+                {/* <p className="text-sm leading-[22px] font-semibold text-btnbg mt-3 block lg:hidden">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 aut fugit, sed quia consequuntur magni dolores eos qui ratione
                 voluptatem sequi.
-              </p>
-              <Reviewer
-                clientImage={review.clientImage}
-                clientName={review.clientName}
-                clientPlace={review.clientPlace}
-              />
+              </p> */}
+              </div>
             </div>
           </div>
         )}

@@ -8,7 +8,7 @@ import Aside from "../aside/Aside";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="lg:w-[88%] left-1/2 transform -translate-x-1/2 absolute lg:top-8 w-full sm:top-0 md:w-full md:top-0 z-10">
+    <header className="lg:w-[88%]   lg:top-8 w-full sm:top-0  lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 fixed md:top-0 z-10">
       <div
         data-aos="fade-up"
         data-aos-delay="300"
@@ -34,7 +34,7 @@ function Header() {
               </li>
             ))}
           </ul>
-          {isOpen && <Aside isOpen={isOpen} />}
+
           {/* get qoute button */}
           <Link
             href="/getaquote"
@@ -54,6 +54,7 @@ function Header() {
           </div>
         </div>
       </div>
+      {isOpen && <Aside isOpen={isOpen} setIsOpen={setIsOpen} />}
     </header>
   );
 }

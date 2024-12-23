@@ -5,7 +5,7 @@ import styles from "./responsive.module.css";
 function AboutUs() {
   return (
     <section
-      className={`${styles.grid_Responsive} main_wrapper grid grid-cols-2 pt-16 pb-[85px] overflow-hidden`}
+      className={`${styles.grid_Responsive} main_wrapper grid grid-cols-2 pt-16 md:pt-24 md:pb-[120px] pb-[85px]  overflow-hidden`}
     >
       <div>
         <h1

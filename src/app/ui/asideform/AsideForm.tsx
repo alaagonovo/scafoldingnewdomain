@@ -11,7 +11,7 @@ function AsideForm() {
   console.log(pathName);
   return (
     <aside className="order-2 lg:order-1 w-full lg:w-[464px] h-fit lg:h-full  p-12 bg-btnbg flex flex-col text-white justify-between">
-      <div className="flex flex-col gap-8 ">
+      <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4" data-aos="fade-up">
           <h1 className="text-2xl font-semibold">
             {pathName === "/getaquote" ? "Get a Quote" : "Get in touch"}

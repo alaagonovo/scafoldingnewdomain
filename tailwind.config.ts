@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+import lineClamp from "@tailwindcss/line-clamp";
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -22,6 +22,7 @@ export default {
         placeholderColor: "var(--placeholder-text-color)",
         borderColor: "var(--border-inputs-color)",
         labelColor: "var(--label-form-color)",
+        bgAside: "var(--backround-aside-color)",
       },
       boxShadow: {
         procardshade:
@@ -29,5 +30,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [lineClamp],
 } satisfies Config;

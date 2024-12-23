@@ -11,7 +11,7 @@ function Reviewer({
   clientPlace: string;
 }) {
   return (
-    <div className="flex absolute bottom-[-55px] lg:bottom-[-140px] items-center gap-2">
+    <div className="flex items-center gap-2">
       <div className="relative w-[60px] h-[60px]">
         <Image
           src={clientImage}

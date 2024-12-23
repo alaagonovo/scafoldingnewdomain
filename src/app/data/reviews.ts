@@ -1,36 +1,36 @@
 const reviews = [
   {
     id: "0",
-    caption: "Exceptional Service!",
+    caption: "Exceptional Quality !",
     review:
-      "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+      "Professional service and quality equipment. The project was delivered on time thanks to their efficiency. We won’t hesitate to work with them again.",
     clientImage: "/assets/client1.webp",
-    clientName: "Wade Warren",
-    clientPlace: "USA, California",
+    clientName: "ACORUS",
+    clientPlace: "92390",
   },
   {
     id: "1",
-    caption: "Section 2",
+    caption: "Trusted Partener !",
     subtitle: "Expeteur sint occaecat cupidatat non priodent",
     review:
-      "loremMagna sit incididunt dolor aliqua. Esse elit esse magna in consequat eiusmod tempor. Ex in minim exercitation reprehenderit laborum qui consequat laboris elit qui magna est voluptate.",
+      "We appreciated their responsiveness and ability to adapt to specific constraints. The scaffolding was study and perfectly safe. A reliable partner.",
     clientImage: "/assets/client1.webp",
-    clientName: "Wade Warren",
-    clientPlace: "USA, California",
+    clientName: "COPAT Construction",
+    clientPlace: "60750 Choisy-au-Bac",
   },
   {
     id: "2",
-    caption: "Section 3",
-    subtitle: "Ut enim ad minim veniam, quis nostrud exercitation",
+    caption: "Efficient Excellence !",
+    // subtitle: "Ut enim ad minim veniam, quis nostrud exercitation",
     review:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
+      "Profissional and fast service. Their equipment is of heigh quality, which made our work easier, Very satisfied.",
     clientImage: "/assets/client1.webp",
-    clientName: "Wade Warren",
-    clientPlace: "USA, California",
+    clientName: "EOS CONSTRUCTIO",
+    clientPlace: "60000 Beauvais",
   },
   {
     id: "3",
-    caption: "Section 4",
+    caption: "Highly Recommended !",
     subtitle: "Ut enim ad minim veniam, quis nostrud exercitation",
     review:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo",
