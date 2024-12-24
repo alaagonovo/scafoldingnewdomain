@@ -8,7 +8,7 @@ import Aside from "../aside/Aside";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className={`lg:w-[88%]   lg:top-8 w-full sm:top-0  lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 fixed md:top-0 z-10 ${styles.main_header}`}>
+    <header className={`lg:w-[88%]  z-40  lg:top-8 w-full sm:top-0  lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 fixed md:top-0 z-10 ${styles.main_header}`}>
       <div
         data-aos="fade-up"
         data-aos-delay="300"
@@ -17,7 +17,7 @@ function Header() {
         {/* logo */}
         <div className="flex items-center relative justify-between">
           <div className="flex gap-2">
-            <div className="relative w-[260px] h-[31px] ">
+            <div className="relative w-[260px] h-[31px]">
               <Image src="/svgs/logolap.svg" alt="logo" fill />
             </div>
           </div>
