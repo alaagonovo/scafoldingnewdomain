@@ -14,7 +14,7 @@ export default function GetInTouch() {
     phone: "",
     message: "",
   });
-
+//err
   const [errors, setErrors] = useState({
     first_name: "",
     last_name: "",
