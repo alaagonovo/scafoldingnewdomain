@@ -26,7 +26,7 @@ function Footer() {
             objectPosition="top"
           />
         </div>
-        <div className="xl:ml-20 ml-0 sm:ml-10">
+        <div className="xl:ml-20 ml-0 sm:ml-10" id="contactus">
           <h1
             data-aos="fade-up"
             data-aos-delay="200"
@@ -52,12 +52,17 @@ function Footer() {
             info@thescaffolding.co.uk
           </p>
           <p
-            className="text-2xl md:text-3xl leading-10 font-medium mb-10 xl:mb-14"
+            className="text-2xl md:text-3xl leading-10 font-medium mb-5 xl:mb-14"
             data-aos="fade-up"
             data-aos-delay="400"
           >
             Company Number
-            <br />
+          </p>
+          <p
+            className="text-2xl text-time  mb-10"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             16055779
           </p>
 

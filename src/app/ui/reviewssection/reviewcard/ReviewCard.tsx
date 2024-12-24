@@ -75,7 +75,7 @@ function ReviewCard({
                 Feedback
               </p>
               <h3
-                className={`text-reviewTitle text-[24px] w-full lg:max-w-[140px] font-semibold mt-0 lg:mt-6 line-clamp-2 ${styles.otherAnimation}`}
+                className={`text-reviewTitle text-lg lg:text-[24px] w-full lg:max-w-[140px] font-semibold mt-0 lg:mt-6 line-clamp-2 ${styles.otherAnimation}`}
               >
                 {review.caption}
                 {/* Section {index + 1} */}
@@ -123,7 +123,7 @@ function ReviewCard({
                     height={44}
                   />
 
-                  <h1 className="text-[28px] lg:text-[33px] font-semibold text-btnbg mb-3 lg:mb-7">
+                  <h1 className="text-[24px] lg:text-[33px] font-semibold text-btnbg mb-3 lg:mb-7">
                     {review.caption}
                   </h1>
                   <p className="text-[20px] leading-8 text-btnbg font-normal max-h-48 sm:max-h-max overflow-hidden">

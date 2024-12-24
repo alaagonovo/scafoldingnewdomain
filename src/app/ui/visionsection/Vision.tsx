@@ -4,7 +4,7 @@ import React from "react";
 
 function Vision() {
   return (
-    <section className="h-auto lg:h-[809px] py-20 bg-btnbg ">
+    <section className="h-auto lg:h-[809px] py-16 lg:py-24 bg-btnbg ">
       <div className="mx-auto w-[92%] md:w-[88%] grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
         <div
           data-aos="fade-right"
@@ -20,7 +20,7 @@ function Vision() {
         <div className="flex flex-col items-start">
           <div
             data-aos="fade-up"
-            className="w-[334px] h-[47px]  mb-16 lg:hidden"
+            className="w-[334px] h-[47px]  mb-10 lg:hidden"
           >
             <Image src="/svgs/vissionlogo.svg" alt="logo vission" fill />
           </div>
@@ -30,7 +30,7 @@ function Vision() {
           >
             <Image src="/svgs/vissionlogolap.svg" alt="logo vission" fill />
           </div>
-          <div className="w-full md:w-[466px]">
+          <div className="w-full md:w-[463px]">
             <h1
               data-aos="fade-up"
               data-aos-delay="300"
@@ -41,8 +41,8 @@ function Vision() {
             <Link
               data-aos="fade-up"
               data-aos-delay="600"
-              className="text-white text-[18px] mt-16 md:text-[22px] inline-block ring-1 ring-white rounded-[68px] px-7 py-3 md:px-12 md:py-3"
-              href="/"
+              className="text-white text-[18px] mt-10 md:text-[22px] inline-block ring-1 ring-white rounded-[68px] px-7 py-3 md:px-12 md:py-3"
+              href="/#contactus"
             >
               Contact Us
             </Link>

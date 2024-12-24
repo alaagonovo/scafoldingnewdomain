@@ -5,7 +5,7 @@ import services from "@/app/data/services";
 
 function Services() {
   return (
-    <section className="overflow-hidden mb-16 md:mb-24 ">
+    <section className="overflow-hidden mb-16 md:mb-24" id="services">
       <div className="mx-auto w-[92%] md:w-[88%]">
         <h1
           data-aos="fade-up"

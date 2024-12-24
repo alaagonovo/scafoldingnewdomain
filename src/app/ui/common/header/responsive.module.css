@@ -1,4 +1,15 @@
+@media (max-width: 1230px) {
+  .dis_none {
+    gap: 30px;
+  }
+  .main_header {
+    width: 98%;
+  }
+}
 @media (max-width: 1024px) {
+  .main_header {
+    width: 100%;
+  }
   .dis_none {
     display: none;
   }

@@ -6,6 +6,7 @@ function AboutUs() {
   return (
     <section
       className={`${styles.grid_Responsive} main_wrapper grid grid-cols-2 pt-16 md:pt-24 md:pb-[120px] pb-[85px]  overflow-hidden`}
+      id="aboutus"
     >
       <div>
         <h1

@@ -7,8 +7,9 @@ import Image from "next/image";
 function Faqs() {
   return (
     <section
-      className="h-auto lg:h-[870px] relative py-14 mt-4"
+      className="h-auto lg:h-[870px] relative py-16 lg:py-24 mt-4"
       style={{ backgroundColor: "#002F69D9" }}
+      id="faqs"
     >
       <Image
         src="/assets/faqscover.webp"

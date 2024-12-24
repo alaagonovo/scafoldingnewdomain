@@ -8,7 +8,7 @@ import Aside from "../aside/Aside";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="lg:w-[88%]   lg:top-8 w-full sm:top-0  lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 fixed md:top-0 z-10">
+    <header className={`lg:w-[88%]   lg:top-8 w-full sm:top-0  lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 fixed md:top-0 z-10 ${styles.main_header}`}>
       <div
         data-aos="fade-up"
         data-aos-delay="300"
@@ -22,12 +22,13 @@ function Header() {
             </div>
           </div>
           {/* links */}
-          <ul className={`flex gap-[44px] max-w-[520px] ${styles.dis_none}`}>
+          <ul className={`flex gap-[44px] max-w-[590px] ${styles.dis_none}`}>
             {links.map((link, index) => (
               <li key={index}>
                 <Link
                   className="font-[600] text-[17px] text-linksColor"
                   href={link.path}
+                  passHref
                 >
                   {link.name}
                 </Link>
