@@ -41,7 +41,7 @@ function Vision() {
             <Link
               data-aos="fade-up"
               data-aos-delay="600"
-              className="text-white text-[18px] mt-10 md:text-[22px] inline-block ring-1 ring-white rounded-[68px] px-7 py-3 md:px-12 md:py-3"
+              className="text-white text-[18px] mt-10 lg:mt-16 md:text-[22px] inline-block ring-1 ring-white rounded-[68px] px-7 py-3 md:px-12 md:py-3"
               href="/#contactus"
             >
               Contact Us

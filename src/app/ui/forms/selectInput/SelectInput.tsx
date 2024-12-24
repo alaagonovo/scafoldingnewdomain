@@ -58,7 +58,7 @@ function SelectInput({
 
       {/* Dropdown Button */}
       <div
-        className="flex items-center justify-between  border border-boredrColor  text-base rounded-lg focus:ring-black  w-full p-2.5  text-placeholderColor cursor-pointer"
+        className="flex items-center justify-between  border border-boredrColor  text-base rounded-lg focus:ring-black  w-full p-2.5  text-placeholderColor cursor-pointer mt-3"
         onClick={() => setOpenDropdownIndex(isOpen ? null : index)}
       >
         <span className="text-placeholderColor">
@@ -71,7 +71,7 @@ function SelectInput({
       {isOpen && (
         <ul
           className="absolute 
-           bg-white border border-gray-300 rounded-lg mt-1 w-full max-h-44 overflow-auto z-10"
+           bg-white border border-gray-300 rounded-lg mt-1 w-full max-h-48 overflow-auto z-10"
         >
           {options.map((option, index) => (
             <React.Fragment key={index}>

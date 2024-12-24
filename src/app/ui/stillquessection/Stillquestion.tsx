@@ -23,7 +23,7 @@ function Stillquestion() {
           data-aos="fade-up"
           data-aos-delay="300"
           className="text-white text-[18px] mt-10  inline-block ring-1 ring-white rounded-[68px] px-7 py-3"
-          href="/"
+          href="/getaquote"
         >
           Get a Quote
         </Link>

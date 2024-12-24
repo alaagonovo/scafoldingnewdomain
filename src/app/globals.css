@@ -50,3 +50,16 @@ body {
 .animate-slide {
   animation: slideFromBottom 0.3s ease-out;
 }
+.form-control {
+  width: 100% !important;
+  height: 45px !important;
+  color: var(--placeholder-text-color);
+  font-size: 1rem !important;
+  font-weight: 400;
+  border-radius: 8px !important;
+}
+.selected-flag,
+.flag-dropdown {
+  border-radius: 8px 0 0 8px !important;
+  background-color: white;
+}

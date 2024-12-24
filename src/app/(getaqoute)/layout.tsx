@@ -3,7 +3,7 @@ import AsideForm from "../ui/asideform/AsideForm";
 import "../globals.css";
 import "aos/dist/aos.css";
 import WithAOS from "../ui/withAOS/WithAos";
-
+import "react-phone-input-2/lib/style.css";
 const urbanist = Urbanist({
   subsets: ["latin"], // Add other subsets if needed
   weight: ["100", "200", "300", "400", "500", "600", "700"], // Specify the font weights you need

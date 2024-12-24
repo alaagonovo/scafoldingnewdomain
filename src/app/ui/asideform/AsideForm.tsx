@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 
 function AsideForm() {
   const pathName = usePathname();
-  console.log(pathName);
+  
   return (
     <aside className="order-2 lg:order-1 w-full lg:w-[464px] h-fit lg:h-full  p-12 bg-btnbg flex flex-col text-white justify-between">
       <div className="flex flex-col gap-8">

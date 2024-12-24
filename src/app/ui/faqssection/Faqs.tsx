@@ -31,7 +31,7 @@ function Faqs() {
         >
           Everything you need to know about the product and billing. Can’t find
           the answer you’re looking for? Please
-          <Link href="/" className="underline decoration-1 ml-2 mr-1">
+          <Link href="/getintouch" className="underline decoration-1 ml-2 mr-1">
             chat to our friendly team
           </Link>
           .
@@ -57,7 +57,7 @@ function Faqs() {
               </p>
             </div>
             <Link
-              href="/"
+              href="/getintouch"
               className="bg-btnbg px-7 py-[10px] text-base h-fit text-white rounded-3xl w-fit mt-5 lg:mt-0"
             >
               Get in touch

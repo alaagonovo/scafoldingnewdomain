@@ -1,8 +1,11 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 function MainTitle() {
+  const pathName = usePathname();
   return (
     <div className="flex flex-col gap-5 ">
       <div className="flex gap-2 items-center" data-aos="fade-up">
@@ -21,7 +24,7 @@ function MainTitle() {
         data-aos="fade-up"
         data-aos-delay="150"
       >
-        Get a Quote
+        {pathName === "/getaquote" ? "Get a Quote" : "Send Your Inquiry"}
       </h1>
       <p className="text-xl linksColor" data-aos="fade-up" data-aos-delay="250">
         You can reach us anytime via{" "}

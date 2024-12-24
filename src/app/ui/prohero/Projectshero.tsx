@@ -31,7 +31,7 @@ function Projectshero() {
           data-aos="fade-up"
           data-aos-delay="700"
           className="text-white text-[18px]  inline-block ring-1 ring-white rounded-[68px] px-7 py-3 "
-          href="/"
+          href="/getintouch"
         >
           Get in touch
         </Link>
