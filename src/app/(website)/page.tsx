@@ -1,11 +1,18 @@
+import React from "react";
 import HeroSection from "../ui/herosection/HeroSection";
-import AboutUs from "../ui/aboutussection/AboutUs";
-import CompletedPro from "../ui/completedProjsection/CompletedPro";
-import StatisticsSection from "../ui/statisticssection/StatisticsSection";
-import Services from "../ui/servicessection/Services";
-import Vision from "../ui/visionsection/Vision";
-import ReviewsSection from "../ui/reviewssection/ReviewsSection";
-import Faqs from "../ui/faqssection/Faqs";
+const AboutUs = React.lazy(() => import("../ui/aboutussection/AboutUs"));
+const CompletedPro = React.lazy(
+  () => import("../ui/completedProjsection/CompletedPro")
+);
+const StatisticsSection = React.lazy(
+  () => import("../ui/statisticssection/StatisticsSection")
+);
+const Services = React.lazy(() => import("../ui/servicessection/Services"));
+const Vision = React.lazy(() => import("../ui/visionsection/Vision"));
+const ReviewsSection = React.lazy(
+  () => import("../ui/reviewssection/ReviewsSection")
+);
+const Faqs = React.lazy(() => import("../ui/faqssection/Faqs"));
 
 export default function Home() {
   return (

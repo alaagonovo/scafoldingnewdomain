@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -5,8 +6,15 @@ function HeroSection() {
   return (
     <section
       className="relative h-[909px] lg:h-[809px] bg-cover bg-top overflow-hidden"
-      style={{ backgroundImage: `url(/assets/herocover.webp)` }}
+      // style={{ backgroundImage: `url(/assets/herocover.webp)` }}
     >
+      <Image
+        src="/assets/herocover.webp"
+        alt="hero view"
+        fill
+        objectFit="cover"
+        objectPosition="top"
+      />
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="flex flex-col absolute w-[92%]  top-28 md:top-[318px]  md:max-w-max  sm:max-w-[500px] lg:left-[88px] left-4 gap-8">
         <h2
