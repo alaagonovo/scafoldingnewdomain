@@ -52,14 +52,14 @@ function Footer() {
             info@thescaffolding.co.uk
           </p>
           <p
-            className="text-2xl md:text-3xl leading-10 font-medium mb-5 xl:mb-14"
+            className="text-2xl md:text-3xl leading-10 font-medium mb-5"
             data-aos="fade-up"
             data-aos-delay="400"
           >
             Company Number
           </p>
           <p
-            className="text-2xl text-time  mb-10"
+            className="text-2xl text-time mb-10"
             data-aos="fade-up"
             data-aos-delay="600"
           >

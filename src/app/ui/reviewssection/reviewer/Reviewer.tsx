@@ -12,12 +12,13 @@ function Reviewer({
 }) {
   return (
     <div className="flex items-center gap-2">
-      <div className="relative w-[60px] h-[60px]">
+      <div className="relative w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center">
         <Image
           src={clientImage}
-          className="rounded-full"
+          className=""
           alt="client Image"
-          fill
+          width={32}
+          height={32}
         />
       </div>
       <div>
