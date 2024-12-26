@@ -192,7 +192,7 @@ export default function GetInTouch() {
 
         {/* Phone */}
         <div
-          className="relative"
+          className="relative z-10"
           data-aos="fade-up"
           data-aos-delay="550"
           data-aos-offset="0"
@@ -223,7 +223,7 @@ export default function GetInTouch() {
 
         {/* Message */}
         <div
-          className="relative z-[-1]"
+          className="relative"
           data-aos="fade-up"
           data-aos-delay="650"
           data-aos-offset="0"
@@ -255,7 +255,7 @@ export default function GetInTouch() {
           data-aos-offset="0"
           type="submit"
           value="Send Your Inquiry"
-          className="px-4 py-3 mt-3 bg-btnbg text-white rounded-3xl font-semibold cursor-pointer z-[-1]"
+          className="px-4 py-3 mt-3 bg-btnbg text-white rounded-3xl font-semibold cursor-pointer"
         />
       </form>
       {reset && <SuccessModal />}
