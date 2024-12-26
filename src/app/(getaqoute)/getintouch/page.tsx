@@ -1,11 +1,10 @@
-
 "use client";
 import React, { useState } from "react";
 import MainTitle from "@/app/ui/mainTitle/MainTitle";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import SuccessModal from "@/app/ui/succesModal/SuccessModal";
-
+import emailjs from "@emailjs/browser";
 export default function GetInTouch() {
   const [form, setForm] = useState({
     first_name: "",
@@ -14,7 +13,7 @@ export default function GetInTouch() {
     phone: "",
     message: "",
   });
-//err
+  //err
   const [errors, setErrors] = useState({
     first_name: "",
     last_name: "",
@@ -67,7 +66,24 @@ export default function GetInTouch() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validate()) {
-      console.log("Form submitted successfully:", form);
+      emailjs
+        .send(
+          "service_rvd5l09",
+          "template_kjpf7z6",
+          { ...form },
+          // (formDataRef as any).current,
+          {
+            publicKey: "mmvQoWw6QlVzJ7kry",
+          }
+        )
+        .then(
+          (result) => {
+            console.log("Email sent successfully:", result.text);
+          },
+          (error) => {
+            console.error("Failed to send email:", error.text);
+          }
+        );
       setForm({
         first_name: "",
         last_name: "",
@@ -207,7 +223,7 @@ export default function GetInTouch() {
 
         {/* Message */}
         <div
-          className="relative"
+          className="relative z-[-1]"
           data-aos="fade-up"
           data-aos-delay="650"
           data-aos-offset="0"
@@ -239,7 +255,7 @@ export default function GetInTouch() {
           data-aos-offset="0"
           type="submit"
           value="Send Your Inquiry"
-          className="px-4 py-3 mt-3 bg-btnbg text-white rounded-3xl font-semibold cursor-pointer"
+          className="px-4 py-3 mt-3 bg-btnbg text-white rounded-3xl font-semibold cursor-pointer z-[-1]"
         />
       </form>
       {reset && <SuccessModal />}

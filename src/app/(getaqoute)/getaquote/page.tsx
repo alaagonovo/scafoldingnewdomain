@@ -1,11 +1,10 @@
 "use client";
-
 import getaquote from "@/app/data/gatauote";
 import SelectInput from "@/app/ui/forms/selectInput/SelectInput";
 import MainTitle from "@/app/ui/mainTitle/MainTitle";
 import SuccessModal from "@/app/ui/succesModal/SuccessModal";
 import { useState } from "react";
-
+import emailjs from "@emailjs/browser";
 export default function GetAQuotePage() {
   const [formValues, setFormValues] = useState({
     field1: "",
@@ -55,7 +54,24 @@ export default function GetAQuotePage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateFields()) {
-      console.log("Form Submitted:", formValues);
+      emailjs
+        .send(
+          "service_rvd5l09",
+          "template_lxopckj",
+          { ...formValues },
+          // (formDataRef as any).current,
+          {
+            publicKey: "mmvQoWw6QlVzJ7kry",
+          }
+        )
+        .then(
+          (result) => {
+            console.log("Email sent successfully:", result.text);
+          },
+          (error) => {
+            console.error("Failed to send email:", error.text);
+          }
+        );
       setFormValues({
         field1: "",
         field2: "",

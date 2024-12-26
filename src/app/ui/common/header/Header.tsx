@@ -8,7 +8,9 @@ import Aside from "../aside/Aside";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className={`lg:w-[88%]  z-40  lg:top-8 w-full sm:top-0  lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 fixed md:top-0 z-10 ${styles.main_header}`}>
+    <header
+      className={`lg:w-[88%]  z-40  lg:top-8 w-full sm:top-0  lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 fixed md:top-0  ${styles.main_header}`}
+    >
       <div
         data-aos="fade-up"
         data-aos-delay="300"
