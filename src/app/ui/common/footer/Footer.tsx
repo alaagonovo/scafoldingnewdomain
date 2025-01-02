@@ -65,7 +65,6 @@ function Footer() {
           >
             16055779
           </p>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 xl:gap-14">
             <div>
               <h2
@@ -150,6 +149,16 @@ function Footer() {
           >
             <Image src="/svgs/logolap.svg" alt="logo" fill />
           </div>
+          <p className="mt-9 text-sm text-time">
+            © 2024 FACE2FACE <br />
+            Proudly Designed by{" "}
+            <Link
+              href="https://www.gonovo.tech/"
+              className="text-black font-semibold hover:underline"
+            >
+              GONOVO
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
