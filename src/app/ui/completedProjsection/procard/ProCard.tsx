@@ -26,7 +26,7 @@ function ProCard({
           src={projectDetail.img}
           alt="project image"
           fill
-          className="rounded-lg"
+          className="rounded-lg object-cover"
         />
       </div>
       <h3 className="text-[22px] font-medium text-white text-left w-full mb-2  max-h-[33px] overflow-hidden">

@@ -23,7 +23,7 @@ function ServiceCard({
           src={serviceDetails.image}
           alt="project image"
           fill
-          className="rounded-lg"
+          className="rounded-lg object-cover"
         />
       </div>
       <h3 className="text-[22px] font-semibold text-btnbg text-left w-full mb-2 max-h-[33px] overflow-hidden">

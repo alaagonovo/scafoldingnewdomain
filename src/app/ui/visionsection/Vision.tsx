@@ -13,6 +13,7 @@ function Vision() {
           <Image
             src="/assets/vission.webp"
             alt="vision image"
+            className="object-cover object-bottom"
             fill
             unoptimized
           />

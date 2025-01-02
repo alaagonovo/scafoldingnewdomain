@@ -1,6 +1,6 @@
 const statistics = [
   {
-    num: 50,
+    num: 500,
     sign: "+",
     text: "Projects Completed",
     bgColor: "#0886F6",

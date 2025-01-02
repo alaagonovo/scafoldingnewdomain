@@ -18,11 +18,13 @@ function Header() {
       >
         {/* logo */}
         <div className="flex items-center relative justify-between">
-          <div className="flex gap-2">
-            <div className="relative w-[260px] h-[31px]">
-              <Image src="/svgs/logolap.svg" alt="logo" fill />
+          <Link href="/">
+            <div className="flex gap-2">
+              <div className="relative w-[260px] h-[31px]">
+                <Image src="/svgs/logolap.svg" alt="logo" fill />
+              </div>
             </div>
-          </div>
+          </Link>
           {/* links */}
           <ul className={`flex gap-[44px] max-w-[590px] ${styles.dis_none}`}>
             {links.map((link, index) => (
