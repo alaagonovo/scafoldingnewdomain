@@ -4,6 +4,7 @@ import "../globals.css";
 import "aos/dist/aos.css";
 import WithAOS from "../ui/withAOS/WithAos";
 import "react-phone-input-2/lib/style.css";
+import Head from "next/head";
 const urbanist = Urbanist({
   subsets: ["latin"], // Add other subsets if needed
   weight: ["100", "200", "300", "400", "500", "600", "700"], // Specify the font weights you need
@@ -15,6 +16,9 @@ export default function GetAQuoteLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="preload" href="/assets/herocover.webp" as="image" />
+      </Head>
       <body className={urbanist.className}>
         <WithAOS>
           <div className="grid grid-cols-1 gap-12  lg:gap-0 lg:grid-cols-[464px,1fr]">
