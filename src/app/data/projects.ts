@@ -1,18 +1,18 @@
 const projects = [
   {
     img: "/assets/proall3.webp",
-    name: "Seaside Serenity Villa",
-    bio: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...",
+    name: "SOGED 13 Allées des roses 95460 EZANVILLE",
+    bio: "25/10/2024",
   },
   {
     img: "/assets/proall6.webp",
-    name: "Metropolitan Haven",
-    bio: "A chic and fully-furnished 2-bedroom apartment with panoramic city views...",
+    name: "ETANDEX Rue de Fontenay, Châtillon",
+    bio: "29/10/2024",
   },
   {
     img: "/assets/proall5.webp",
-    name: "Rustic Retreat Cottage",
-    bio: "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...",
+    name: "ISO BAT 29 Rue pére Sanson 14000 Cean",
+    bio: "02/04/2024",
   },
 ];
 

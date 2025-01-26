@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import React from "react";
 
 interface IProject {
@@ -32,15 +32,15 @@ function ProCard({
       <h3 className="text-[22px] font-medium text-white text-left w-full mb-2  max-h-[33px] overflow-hidden">
         {projectDetail.name}
       </h3>
-      <p className="text-white text-[18px] font-light max-h-[54px] overflow-hidden">
+      <p className="text-white text-[18px] font-light max-h-[54px] overflow-hidden w-full">
         {projectDetail.bio}
       </p>
-      <Link
+      {/* <Link
         href="/"
         className="text-white w-full text-left  underline decoration-1"
       >
         Read More
-      </Link>
+      </Link> */}
     </div>
   );
 }

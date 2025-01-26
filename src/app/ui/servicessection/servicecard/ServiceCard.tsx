@@ -24,6 +24,7 @@ function ServiceCard({
           alt="project image"
           fill
           className="rounded-lg object-cover"
+          style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px" }}
         />
       </div>
       <h3 className="text-[22px] font-semibold text-btnbg text-left w-full mb-2 max-h-[33px] overflow-hidden">
