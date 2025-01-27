@@ -4,7 +4,7 @@ const reviews = [
     caption: "Exceptional Quality !",
     review:
       "Professional service and quality equipment. The project was delivered on time thanks to their efficiency. We won’t hesitate to work with them again.",
-    clientImage: "/assets/acorus.png",
+    clientImage: "/assets/acorus.webp",
     clientName: "ACORUS",
     clientPlace: "92390",
   },
@@ -24,7 +24,7 @@ const reviews = [
     // subtitle: "Ut enim ad minim veniam, quis nostrud exercitation",
     review:
       "Profissional and fast service. Their equipment is of heigh quality, which made our work easier, Very satisfied.",
-    clientImage: "/assets/eos.png",
+    clientImage: "/assets/eos.webp",
     clientName: "EOS CONSTRUCTIO",
     clientPlace: "60000 Beauvais",
   },
@@ -34,7 +34,7 @@ const reviews = [
     // subtitle: "Ut enim ad minim veniam, quis nostrud exercitation",
     review:
       "Good overall performance. The team showed professionalism and met our technical requirements.The project follow-up was impeccable. We recommend their services",
-    clientImage: "/assets/etandex.png",
+    clientImage: "/assets/etandex.webp",
     clientName: "ETANDEX",
     clientPlace: "91940 Les Ulis",
   },
