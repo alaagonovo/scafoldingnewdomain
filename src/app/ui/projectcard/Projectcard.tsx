@@ -3,9 +3,9 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 interface IPro {
   image: string;
-  // category: string;
+  category: string;
   title: string;
-  // description: string;
+  description: string;
   date: string;
 }
 function Projectcard({ pro, index }: { pro: IPro; index: number }) {
@@ -29,13 +29,13 @@ function Projectcard({ pro, index }: { pro: IPro; index: number }) {
       <div className="relative w-[314px] sm:w-[336px] h-[240px] rounded-lg overflow-hidden">
         <Image src={pro.image} alt="image project" fill objectFit="cover" />
       </div>
-      {/* <p className="text-sm font-semibold mt-6 mb-2 text-lightBlue">
+      <p className="text-sm font-semibold mt-6 mb-2 text-lightBlue">
         {pro.category}
-      </p> */}
+      </p>
       <h1 className="text-2xl text-btnbg leading-8 font-semibold my-6">
         {pro.title}
       </h1>
-      {/* <p className="text-base text-linksColor">{pro.description}</p> */}
+      <p className="text-base text-linksColor">{pro.description}</p>
       <p className="text-sm text-linksColor">{pro.date}</p>
     </div>
   );
