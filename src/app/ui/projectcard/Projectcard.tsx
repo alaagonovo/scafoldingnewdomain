@@ -32,10 +32,15 @@ function Projectcard({ pro, index }: { pro: IPro; index: number }) {
       <p className="text-sm font-semibold mt-6 mb-2 text-lightBlue">
         {pro.category}
       </p>
-      <h1 className="text-2xl text-btnbg leading-8 font-semibold my-6">
-        {pro.title}
+      <h1 className="text-xl text-btnbg leading-8 font-semibold my-6">
+        {pro.description}
       </h1>
-      <p className="text-base text-linksColor">{pro.description}</p>
+      <p className="text-base text-linksColor">
+        <span className="relative w-4 h-4 inline-block me-1">
+          <Image src="/svgs/locationIcon.svg" alt="location icon" fill />
+        </span>
+        {pro.title}
+      </p>
       <p className="text-sm text-linksColor">{pro.date}</p>
     </div>
   );
