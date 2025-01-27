@@ -135,12 +135,7 @@ function ReviewCard({
                   clientName={review.clientName}
                   clientPlace={review.clientPlace}
                 />
-                {/* static ele */}
-                {/* <p className="text-sm leading-[22px] font-semibold text-btnbg mt-3 block lg:hidden">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi.
-              </p> */}
+              
               </div>
             </div>
           </div>

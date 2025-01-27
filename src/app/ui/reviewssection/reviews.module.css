@@ -24,7 +24,12 @@
   object-fit: cover;
   object-position: center;
 }
-
+.reviewer_Img {
+  object-fit: contain !important;
+  max-width: 50px;
+  max-height: 35px;
+  position: relative !important;
+}
 .active {
   width: 580px;
   transition: width ease 500ms;

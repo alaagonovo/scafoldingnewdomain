@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import styles from "./../reviews.module.css";
 function Reviewer({
   clientImage,
   clientName,
@@ -15,10 +15,10 @@ function Reviewer({
       <div className="relative w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center">
         <Image
           src={clientImage}
-          className=""
+          className={`${styles.reviewer_Img} object-contain`}
           alt="client Image"
-          width={32}
-          height={32}
+          
+          fill
         />
       </div>
       <div>
